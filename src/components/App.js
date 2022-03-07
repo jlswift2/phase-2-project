@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import NewEntry from "./components/NewEntry";
-import Holder from "./components/Holder";
+import NavBar from "./NavBar";
+import Home from "./Home";
+import NewEntry from "./NewEntry";
+import Holder from "./Holder";
 
 
 function App() {
