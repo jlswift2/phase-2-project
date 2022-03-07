@@ -1,9 +1,14 @@
 import React from "react";
+import EntryDisplay from "./EntryDisplay"
+import NewEntryForm from "./NewEntryForm"
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-    {/* insert components here */}
+      <Header />
+      <EntryDisplay />
+      <NewEntryForm />
     </div>
   );
 }
