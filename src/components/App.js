@@ -1,19 +1,16 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import NavBar from "./NavBar";
+import Header from "./Header";
 import Home from "./Home";
 import NewEntry from "./NewEntry";
 import Holder from "./Holder";
 
-
 function App() {
-
-
 
 
   return (
     <div className="App">
-      <NavBar /> 
+      <Header /> 
       <Switch>
         <Route path="/Holder">
           <Holder />
@@ -24,7 +21,7 @@ function App() {
         <Route path="/NewEntry">
           <NewEntry />
         </Route>
-        </Switch>
+       </Switch>
     </div>
   );
 }
