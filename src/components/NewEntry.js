@@ -38,7 +38,7 @@ function NewEntry() {
             body: JSON.stringify(formData)
         })
         .then( response => response.json())
-        .then( data =>  (data))
+        .then( data => history.push("/"));
         }
             //making a post edit 
         if(match.path === "/Entry/:id/Edit"){
@@ -48,9 +48,8 @@ function NewEntry() {
                 body: JSON.stringify(formData)
             })
             .then( response => response.json())
-            .then( data =>  (data))
+            .then(data => history.push("/"));
         }
-        history.push("/")
     }
 
     return (
