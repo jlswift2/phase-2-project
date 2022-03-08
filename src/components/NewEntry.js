@@ -40,7 +40,7 @@ function NewEntry() {
                     <select onChange={(e) => setMood(e.target.value)} placeholder="How Am I Feeling?" value={mood}>
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
                         <option value="Happy">Happy</option>
-                        <option value="Anxious">Anxious</option>
+                        <option value="Tired">Tired</option>
                         <option value="Sad">Sad</option>
                         <option value="Excitement">Excitement</option>
                         <option value="Contmept">Contmept</option>
