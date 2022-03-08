@@ -22,8 +22,11 @@ function App() {
         <Route path="/NewEntry">
           <NewEntry />
         </Route>
-        <Route path="/Entry/:id">
+        <Route exact path="/Entry/:id">
           <Entry />
+        </Route>
+        <Route exact path="/Entry/:id/Edit">
+          <NewEntry />
         </Route>
        </Switch>
     </div>

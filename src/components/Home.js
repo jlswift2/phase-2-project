@@ -30,10 +30,12 @@ function Home() {
         <label htmlFor="filter">Filter by: </label>
         <select name="filter">
           <option value="all">All</option>
-          <option value="happy">Happy</option>
-          <option value="sad">Sad</option>
-          <option value="tired">Tired</option>
-          <option value="mad">Mad</option>
+          <option value="Happy">Happy</option>
+          <option value="Tired">Tired</option>
+          <option value="Sad">Sad</option>
+          <option value="Excitement">Excitement</option>
+          <option value="Contmept">Contmept</option>
+          <option value="Stressed">Stressed</option>
         </select>
       </form>
 
