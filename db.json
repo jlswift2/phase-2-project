@@ -54,41 +54,11 @@
     },
     {
       "title": "hello",
-      "text_body": "my garden <3",
+      "text_body": "hellooooo",
       "author": "justin",
       "mood": "",
       "": "Tired",
       "id": 8
-    },
-    {
-      "title": "meow",
-      "text_body": "meow meow ",
-      "author": "cat ",
-      "mood": "",
-      "": "Sad",
-      "id": 9
-    },
-    {
-      "title": "meow meow",
-      "text_body": "maddddddd",
-      "author": "cat",
-      "mood": "Contmept",
-      "": "Sad",
-      "id": 10
-    },
-    {
-      "title": "frfr",
-      "text_body": "hi",
-      "author": "justin",
-      "mood": "Excitement",
-      "id": 11
-    },
-    {
-      "title": "helllo",
-      "text_body": "frf",
-      "author": "vi",
-      "mood": "Sad",
-      "id": 12
     }
   ]
 }
