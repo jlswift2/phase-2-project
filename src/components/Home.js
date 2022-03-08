@@ -7,8 +7,8 @@ function Home() {
 
   useEffect(() => {
     fetch("http://localhost:8002/journals")
-    .then(res => res.json())
-    .then(data => setEntries(data));
+      .then(res => res.json())
+      .then(data => setEntries(data));
   }, []);
 
   const handleFilterChange = event => {
@@ -16,16 +16,17 @@ function Home() {
   }
 
   const renderFilteredEntries = filter => {
-    if(filter === "all") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    if (filter === "all") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
 
     const filteredEntries = entries.filter(entry => entry.mood === filter);
     return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
   }
 
+
+  
   return (
     <div>
       <h1>Home Page</h1>
-
       <form onChange={handleFilterChange}>
         <label htmlFor="filter">Filter by: </label>
         <select name="filter">
@@ -41,7 +42,7 @@ function Home() {
 
       {renderFilteredEntries(filter)}
     </div>
-  ) 
+  )
 }
 
 export default Home;

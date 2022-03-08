@@ -30,6 +30,14 @@ function NewEntry() {
 
     function handleSubmit(e) {
         e.preventDefault()
+
+        fetch("http://localhost:8002/journals",{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({title,name,text_body,mood})
+        })
+        .then( response => response.json())
+        .then( data =>  (data))
         history.push("/")
     }
 
@@ -62,13 +70,15 @@ function NewEntry() {
                         <option value="Stressed">Stressed</option>
                     </select>
                 </label>
-                <input
+                <textarea
                     id="entry"
                     type="text"
                     name="text_body"
                     placeholder="Type New Entry..."
+
                     value={formData.text_body}
                     onChange={handleChange}
+
                 />
                 <button type="submit">Submit Entry</button>
             </form>

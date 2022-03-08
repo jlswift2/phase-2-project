@@ -1,25 +1,46 @@
 {
-    "journals": [
-      {
-        "id": 1,
-        "title": "Help me",
-        "text_body": "I am trapped in the database and cannot get out!",
-        "author": "json",
-        "mood": "sad"
-      },
-      {
-        "id": 2,
-        "title": "Blog Post",
-        "text_body": "I really need to do it. For real. I have not even thought about it yet.",
-        "author": "Justin",
-        "mood": "tired"
-      },
-      {
-        "id": 3,
-        "title": "A haiku",
-        "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
-        "author": "unknown",
-        "mood": "happy"
-      }
-    ]
+  "journals": [
+    {
+      "id": 1,
+      "title": "Help me",
+      "text_body": "I am trapped in the database and cannot get out!",
+      "author": "json",
+      "mood": "sad"
+    },
+    {
+      "id": 2,
+      "title": "Blog Post",
+      "text_body": "I really need to do it. For real. I have not even thought about it yet.",
+      "author": "Justin",
+      "mood": "tired"
+    },
+    {
+      "id": 3,
+      "title": "A haiku",
+      "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
+      "author": "unknown",
+      "mood": "happy"
+    },
+    {
+      "title": "hi",
+      "name": "gi",
+      "entry": "frfr",
+      "mood": "Happy",
+      "id": 4
+    },
+    {
+      "title": "hello",
+      "name": "vi",
+      "entry": "awesome day",
+      "mood": "Excitement",
+      "id": 5
+    },
+    {
+      "title": "okay day today",
+      "name": "brian vu",
+      "text_body": "the day was really good!",
+      "mood": "Excitement",
+      "id": 6
+    }
+  ]
 }
