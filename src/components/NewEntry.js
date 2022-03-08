@@ -34,7 +34,7 @@ function NewEntry() {
         fetch("http://localhost:8002/journals",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({title,name,text_body,mood})
+            body: JSON.stringify(formData)
         })
         .then( response => response.json())
         .then( data =>  (data))
@@ -75,7 +75,6 @@ function NewEntry() {
                     type="text"
                     name="text_body"
                     placeholder="Type New Entry..."
-
                     value={formData.text_body}
                     onChange={handleChange}
 

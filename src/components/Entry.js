@@ -14,7 +14,7 @@ function Entry() {
 
   return (
     <div>
-      {entry.title} by {entry.name}
+      {entry.title} by {entry.author}
       <br/>
       {entry.text_body}
       <br/>
