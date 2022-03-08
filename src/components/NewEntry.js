@@ -30,14 +30,26 @@ function NewEntry() {
 
     function handleSubmit(e) {
         e.preventDefault()
-
-        fetch("http://localhost:8002/journals",{
+            //making a new post 
+        if(match.path === "/NewEntry"){
+            fetch("http://localhost:8002/journals",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(formData)
         })
         .then( response => response.json())
         .then( data =>  (data))
+        }
+            //making a post edit 
+        if(match.path === "/Entry/:id/Edit"){
+            fetch(`http://localhost:8002/journals/${id}`,{
+                method: "PATCH",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData)
+            })
+            .then( response => response.json())
+            .then( data =>  (data))
+        }
         history.push("/")
     }
 
@@ -60,13 +72,13 @@ function NewEntry() {
                     onChange={handleChange}
                 />
                 <label>
-                    <select onChange={handleChange} placeholder="How Am I Feeling?" value={formData.mood}>
+                    <select onChange={handleChange} name="mood" placeholder="How Am I Feeling?" value={formData.mood}>
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
                         <option value="Happy">Happy</option>
                         <option value="Tired">Tired</option>
                         <option value="Sad">Sad</option>
                         <option value="Excitement">Excitement</option>
-                        <option value="Contmept">Contmept</option>
+                        <option value="Contempt">Contempt</option>
                         <option value="Stressed">Stressed</option>
                     </select>
                 </label>

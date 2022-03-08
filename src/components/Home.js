@@ -35,7 +35,7 @@ function Home() {
           <option value="Tired">Tired</option>
           <option value="Sad">Sad</option>
           <option value="Excitement">Excitement</option>
-          <option value="Contmept">Contmept</option>
+          <option value="Contempt">Contempt</option>
           <option value="Stressed">Stressed</option>
         </select>
       </form>
