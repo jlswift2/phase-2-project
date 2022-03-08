@@ -5,7 +5,7 @@ function EntryDisplay({ entry }) {
   return (
     <div>
       <Link to={`/Entry/${entry.id}`}>
-        {entry.title} by {entry.name}
+        {entry.title} by {entry.author}
         <br/>
         mood: {entry.mood}
       </Link>
