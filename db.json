@@ -1,0 +1,22 @@
+{
+    "journals": [
+      {
+        "title": "Help me",
+        "text_body": "I am trapped in the database and cannot get out!",
+        "author": "json",
+        "mood": "sad"
+      },
+      {
+        "title": "Blog Post",
+        "text_body": "I really need to do it. For real. I have not even thought about it yet.",
+        "author": "Justin",
+        "mood": "tired"
+      },
+      {
+        "title": "A haiku",
+        "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
+        "author": "unknown",
+        "mood": "happy"
+      }
+    ]
+}

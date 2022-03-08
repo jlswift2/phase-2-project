@@ -16,8 +16,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json -p 8002"
   },
+  "devDependencies": {
+    "json-server": "^0.15.1"
+  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
