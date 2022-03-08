@@ -4,6 +4,7 @@ import Header from "./Header";
 import Home from "./Home";
 import NewEntry from "./NewEntry";
 import Holder from "./Holder";
+import Entry from "./Entry";
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/NewEntry">
           <NewEntry />
+        </Route>
+        <Route path="/Entry/:id">
+          <Entry />
         </Route>
        </Switch>
     </div>
