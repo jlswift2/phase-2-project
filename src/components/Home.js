@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import EntryDisplay from "./EntryDisplay";
+import EntryCard from "./EntryCard";
 
 function Home() {
   const [entries, setEntries] = useState([]);
@@ -16,10 +16,10 @@ function Home() {
   }
 
   const renderFilteredEntries = filter => {
-    if(filter === "all") return entries.map(entry => <EntryDisplay key={entry.id} entry={entry}></EntryDisplay>);
+    if(filter === "all") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
 
     const filteredEntries = entries.filter(entry => entry.mood === filter);
-    return filteredEntries.map(entry => <EntryDisplay key={entry.id} entry={entry}></EntryDisplay>);
+    return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
   }
 
   return (

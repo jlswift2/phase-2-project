@@ -1,5 +1,4 @@
 import React from 'react'
-import Entry from './Entry'
 import { Link } from "react-router-dom";
 
 function EntryDisplay({ entry }) {
