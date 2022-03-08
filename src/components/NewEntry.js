@@ -4,14 +4,21 @@ import { useHistory } from "react-router-dom";
 function NewEntry() {
     const [title, setTitle] = useState("")
     const [name, setName] = useState("")
-    const [entry, setEntry] = useState("")
+    const [text_body, setText_Body] = useState("")
     const [mood, setMood] = useState("")
 
     const history =useHistory()
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(name, title, mood, entry)
+        fetch("http://localhost:8002/journals",{
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({title,name,text_body,mood})
+        })
+        .then( response => response.json())
+        .then( data =>  (data))
+        // console.log(name, title, mood, entry)
         history.push("/")
     }
 
@@ -47,13 +54,13 @@ function NewEntry() {
                         <option value="Stressed">Stressed</option>
                     </select>
                 </label>
-                <input
+                <textarea
                     id="entry"
                     type="text"
                     name="entry"
                     placeholder="Type New Entry..."
-                    value={entry}
-                    onChange={(e) => setEntry(e.target.value)}
+                    value={text_body}
+                    onChange={(e) => setText_Body(e.target.value)}
                 />
                 <button type="submit">Add Entry</button>
             </form>
