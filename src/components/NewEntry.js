@@ -18,8 +18,15 @@ function NewEntry() {
             fetch(`http://localhost:8002/journals/${id}`)
             .then(res => res.json())
             .then(data => setFormData(data));
+        } else {
+            setFormData({
+                title: "",
+                text_body: "",
+                author: "",
+                mood: ""
+            })
         }
-    }, []);
+    }, [match.path]);
     
     function handleChange(e) {
         setFormData({
