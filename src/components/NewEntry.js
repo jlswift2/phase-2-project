@@ -18,8 +18,15 @@ function NewEntry() {
             fetch(`http://localhost:8002/journals/${id}`)
             .then(res => res.json())
             .then(data => setFormData(data));
+        } else {
+            setFormData({
+                title: "",
+                text_body: "",
+                author: "",
+                mood: ""
+            })
         }
-    }, []);
+    }, [match.path]);
     
     function handleChange(e) {
         setFormData({
@@ -38,7 +45,7 @@ function NewEntry() {
         })
         .then( response => response.json())
         .then( data =>  (data))
-        history.push("/")
+        
     }
 
     return (
@@ -60,7 +67,7 @@ function NewEntry() {
                     onChange={handleChange}
                 />
                 <label>
-                    <select onChange={handleChange} placeholder="How Am I Feeling?" value={formData.mood}>
+                    <select onChange={handleChange} placeholder="How Am I Feeling?" value={formData.mood} name="mood">
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
                         <option value="Happy">Happy</option>
                         <option value="Tired">Tired</option>

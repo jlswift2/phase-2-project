@@ -43,22 +43,11 @@
       "id": 6
     },
     {
-      "formData": {
-        "title": "meh meh",
-        "text_body": "yeppi!",
-        "author": "justin",
-        "mood": "",
-        "": "Tired"
-      },
+      "title": "asdfasdf",
+      "text_body": "asdfasdfadfgdfghjgfhdj",
+      "author": "Justin",
+      "mood": "Tired",
       "id": 7
-    },
-    {
-      "title": "hello",
-      "text_body": "hellooooo",
-      "author": "justin",
-      "mood": "",
-      "": "Tired",
-      "id": 8
     }
   ]
 }
