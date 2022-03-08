@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Entry() {
   const { id } = useParams();
@@ -19,6 +19,9 @@ function Entry() {
       {entry.text_body}
       <br/>
       mood: {entry.mood}
+      <Link to={`/Entry/${entry.id}/Edit`}>
+        <button>Edit</button>
+      </Link>
     </div>
   )
 }

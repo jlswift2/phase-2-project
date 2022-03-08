@@ -1,16 +1,36 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useHistory, useParams, useRouteMatch } from "react-router-dom";
 
 function NewEntry() {
-    const [title, setTitle] = useState("")
-    const [name, setName] = useState("")
-    const [text_body, setText_Body] = useState("")
-    const [mood, setMood] = useState("")
+    const [formData, setFormData] = useState({
+        title: "",
+        text_body: "",
+        author: "",
+        mood: ""
+    });
 
     const history =useHistory()
+    const { id } = useParams();
+    const match = useRouteMatch();
+
+    useEffect(() => {
+        if(match.path === "/Entry/:id/Edit"){
+            fetch(`http://localhost:8002/journals/${id}`)
+            .then(res => res.json())
+            .then(data => setFormData(data));
+        }
+    }, []);
+    
+    function handleChange(e) {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
 
     function handleSubmit(e) {
         e.preventDefault()
+
         fetch("http://localhost:8002/journals",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -18,12 +38,8 @@ function NewEntry() {
         })
         .then( response => response.json())
         .then( data =>  (data))
-        // console.log(name, title, mood, entry)
         history.push("/")
     }
-
-
-
 
     return (
         <div className="new-entry-form" onSubmit={handleSubmit}>
@@ -33,18 +49,18 @@ function NewEntry() {
                     type="text"
                     name="title"
                     placeholder="Enter Title For Entry..."
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
+                    value={formData.title}
+                    onChange={handleChange}
                 />
                 <input
                     type="text"
-                    name="name"
+                    name="author"
                     placeholder="Enter your name..."
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={formData.author}
+                    onChange={handleChange}
                 />
                 <label>
-                    <select onChange={(e) => setMood(e.target.value)} placeholder="How Am I Feeling?" value={mood}>
+                    <select onChange={handleChange} placeholder="How Am I Feeling?" value={formData.mood}>
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
                         <option value="Happy">Happy</option>
                         <option value="Tired">Tired</option>
@@ -57,12 +73,14 @@ function NewEntry() {
                 <textarea
                     id="entry"
                     type="text"
-                    name="entry"
+                    name="text_body"
                     placeholder="Type New Entry..."
-                    value={text_body}
-                    onChange={(e) => setText_Body(e.target.value)}
+
+                    value={formData.text_body}
+                    onChange={handleChange}
+
                 />
-                <button type="submit">Add Entry</button>
+                <button type="submit">Submit Entry</button>
             </form>
         </div>
     )
