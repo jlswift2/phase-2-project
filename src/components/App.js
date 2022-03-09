@@ -5,6 +5,7 @@ import Home from "./Home";
 import NewEntry from "./NewEntry";
 import Holder from "./Holder";
 import Entry from "./Entry";
+import Footer from "./Footer";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <NewEntry />
         </Route>
        </Switch>
+       <Footer />
     </div>
   );
 }

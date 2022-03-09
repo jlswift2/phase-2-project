@@ -60,7 +60,7 @@ function NewEntry() {
     }
 
     return (
-        <div className="new-entry-form" onSubmit={handleSubmit}>
+        <div id="new-entry-form" onSubmit={handleSubmit}>
             <h2>New Entry</h2>
             <form>
                 <input
