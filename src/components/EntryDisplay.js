@@ -4,20 +4,19 @@ import EntryCard from "./EntryCard";
 
 const moodArray = ["Happy","Tired","Sad","Excitement","Contempt","Stressed"]
 
-
-
-
-function Home() {
+function EntryDisplay({ user, handleSetUser }) {
   const [entries, setEntries] = useState([]);
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("All");
   const [isDescending, setIsDescending] = useState(true)
 
   useEffect(() => {
+    const userStatus = JSON.parse(localStorage.getItem("journalUser"));
     fetch("http://localhost:8002/journals")
       .then(res => res.json())
-      .then(data => setEntries(data));
-
-
+      .then(data => {
+        setEntries(data)
+        handleSetUser(userStatus);
+      });
   }, []);
 
   useEffect(() => {
@@ -45,12 +44,15 @@ function Home() {
   }
 
   const renderFilteredEntries = filter => {
-    if (filter === "all") {
-      return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
-    } else {
-      const filteredEntries = entries.filter(entry => entry.mood === filter);
+    if (filter === "All") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+
+    else if (filter === "Your Entries") {
+      const filteredEntries = entries.filter(entry => entry.author === user.username);
       return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
     }
+
+    const filteredEntries = entries.filter(entry => entry.mood === filter);
+    return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
   }
 
   const moodList = moodArray.map( mood => 
@@ -65,7 +67,8 @@ function Home() {
       <form onChange={handleFilterChange}>
         <label htmlFor="filter">Filter by: </label>
         <select name="filter">
-          <option value="all">All</option>
+          <option value="All">All</option>
+          {user ? <option value="Your Entries">Your Entries</option> : null}
           <option value="Happy">Happy</option>
           <option value="Tired">Tired</option>
           <option value="Sad">Sad</option>
@@ -89,4 +92,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default EntryDisplay;

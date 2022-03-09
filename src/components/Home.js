@@ -52,7 +52,7 @@ import EntryDisplay from "./EntryDisplay";
 //         </select>
 //       </form>
 
-function Home() {
+function Home({ user, handleSetUser }) {
   return (
     <>
       <section>
@@ -68,7 +68,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <EntryDisplay />
+      <EntryDisplay user={user} handleSetUser={handleSetUser}/>
     </>
   )
 }
