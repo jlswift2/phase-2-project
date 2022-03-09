@@ -22,43 +22,11 @@
       "mood": "happy"
     },
     {
-      "title": "hi",
-      "name": "gi",
-      "entry": "frfr",
-      "mood": "Happy",
+      "title": "my cat",
+      "text_body": "i love my cats",
+      "author": "Vi",
+      "mood": "Tired",
       "id": 4
-    },
-    {
-      "title": "hello",
-      "name": "vi",
-      "entry": "awesome day",
-      "mood": "Excitement",
-      "id": 5
-    },
-    {
-      "title": "okay day today",
-      "name": "brian vu",
-      "text_body": "the day was really good!",
-      "mood": "Excitement",
-      "id": 6
-    },
-    {
-      "formData": {
-        "title": "meh meh",
-        "text_body": "yeppi!",
-        "author": "justin",
-        "mood": "",
-        "": "Tired"
-      },
-      "id": 7
-    },
-    {
-      "title": "hello",
-      "text_body": "hellooooo",
-      "author": "justin",
-      "mood": "",
-      "": "Tired",
-      "id": 8
     }
   ]
 }

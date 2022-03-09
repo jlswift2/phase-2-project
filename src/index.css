@@ -1,16 +1,111 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* start of navbar styling */
+
+header{
+  font-family: 'Rubik';
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  height:110px;
+  background-color:  #e8e8e8;
 }
+
+#welcome{
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 100px;
+  }
+
+.navbar-nav{
+  list-style: none;
+}
+.navbar-nav li{
+  font-size: 20px;
+  display:inline-block;
+  list-style: none;
+  padding: 0px 20px
+}
+
+/* end of navbar styling */
+
+/* start of home page styling */
+#titleContainer{
+  position: relative;
+  display:block;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background-color: #e8e8e8;;
+  text-align: left;
+}
+#titleBox {
+  margin-top: 250px;
+  height:200px;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  /* align-content: center;
+  justify-content: center; */
+}
+
+#title,#titleDescription{
+  margin-left: 20%;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: black;
+}
+
+#title {
+  font-size: 50px;
+}
+#titleDescription{
+  font-size: 30px;
+}
+
+#midArrow{
+display: flex;
+justify-content: center;
+}
+.arrow{
+  height: 50px;
+  width: 50px;
+}
+/* end of home page styling */
+
+/* start of footer card styles */
+#footerContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  color:grey;
+  background-color:  #e8e8e8;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#footerYear,#footerName,#footerTitle {
+  text-align:center
+}
+/* end of footer card styles */
+
+
+
 
 .new-entry-form {
   text-align: center;
@@ -20,7 +115,10 @@ code {
   height: 100px;
 }
 
-.navbar{
-  text-align: center;
-  padding: 10px;
+#entryContainer{
+  min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
 }
