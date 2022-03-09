@@ -14,26 +14,31 @@ function App() {
     setUser(userStatus);
   }, []);
 
-  console.log(user)
+  const handleSetUser = user => {
+    setUser(user);
+  }
 
   return (
     <div className="App">
-      <Header />
+      <Header user={user} handleSetUser={handleSetUser}/>
       <Switch>
         <Route exact path="/Login">
-          <Login />
+          <Login handleSetUser={handleSetUser}/>
+        </Route>
+        <Route exact path="/SignUp">
+          <Login handleSetUser={handleSetUser} signUp={true}/>
         </Route>
         <Route exact path="/NewEntry">
-          <NewEntry user={user}/>
+          <NewEntry user={user} handleSetUser={handleSetUser}/>
         </Route>
         <Route exact path="/Entry/:id">
-          <Entry user={user}/>
+          <Entry user={user} handleSetUser={handleSetUser}/>
         </Route>
         <Route exact path="/Entry/:id/Edit">
-          <NewEntry user={user}/>
+          <NewEntry user={user} handleSetUser={handleSetUser}/>
         </Route>
         <Route path="/">
-          <Home user={user}/>
+          <Home user={user} handleSetUser={handleSetUser}/>
         </Route>
       </Switch>
     </div>

@@ -67,22 +67,5 @@
       "mood": "Tired",
       "id": 9
     }
-  ],
-  "users": [
-    {
-      "username": "brian vu",
-      "favAnimal": "omg",
-      "id": 1
-    },
-    {
-      "username": "brian vu",
-      "favAnimal": "qweqweqwe",
-      "id": 2
-    },
-    {
-      "username": "brian vu",
-      "favAnimal": "omg",
-      "id": 3
-    }
   ]
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
-function Login() {
+function Login({ handleSetUser, signUp }) {
   const [userData, setUserData] = useState({
     username: "",
     favAnimal: ""
@@ -19,27 +19,32 @@ function Login() {
   const handleSubmit = event => {
     event.preventDefault();
 
-    fetch("http://localhost:8002/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(userData)
-    })
-    .then(res => res.json())
-    .then(data => {
-      localStorage.setItem("journalUser", JSON.stringify(data));
-      history.push("/");
-    });
+    localStorage.setItem("journalUser", JSON.stringify(userData));
+    handleSetUser(userData);
+    history.push("/");
   }
 
+  const handleSignUp = signUp => {
+    if (signUp) return (
+      <>
+        Already have an account? <Link to="/Login">Log In</Link>
+      </>
+    );
+    else return (
+      <>
+        Don't have an account yet? <Link to="/SignUp">Sign Up</Link>
+      </>
+    );
+  }
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <input type="text" name="username" value={userData.username} onChange={handleChange} placeholder="Username"></input>
         <input type="text" name="favAnimal" value={userData.favAnimal} onChange={handleChange} placeholder="FAVORITE ANIMAL?"></input>
-        <button>Sign Up</button>
+        <button>{signUp ? "Sign Up" : "Log In"}</button>
       </form>
+      {handleSignUp(signUp)}
     </div>
   ) 
 }
