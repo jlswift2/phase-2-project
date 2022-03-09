@@ -33,23 +33,6 @@
       "id": 4
     },
     {
-
-      "title": "hello",
-      "name": "vi",
-      "entry": "awesome day",
-      "mood": "Excitement",
-      "date": "2022-03-05T02:17:08.027Z",
-      "id": 5
-    },
-    {
-      "title": "okay day today",
-      "name": "brian vu",
-      "text_body": "the day was really good!",
-      "mood": "Excitement",
-      "date": "2022-03-07T02:17:08.027Z",
-      "id": 6
-    },
-    {
       "title": "sdfgsdfg",
       "text_body": "dfsbbbsere",
       "author": "Justin",
@@ -64,6 +47,18 @@
       "mood": "Happy",
       "date": "2022-03-09T15:18:04.512Z",
       "id": 8
+    }
+  ],
+  "users": [
+    {
+      "username": "qwe",
+      "favAnimal": "qweqwe",
+      "id": 1
+    },
+    {
+      "username": "sc",
+      "favAnimal": "wqqqqqq",
+      "id": 2
     }
   ]
 }

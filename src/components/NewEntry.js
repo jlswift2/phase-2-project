@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useHistory, useParams, useRouteMatch } from "react-router-dom";
+import { useHistory, useParams, useRouteMatch, Redirect } from "react-router-dom";
 
-
-function NewEntry() {
-
+function NewEntry({ user, handleSetUser }) {
     const [formData, setFormData] = useState({
         title: "",
         text_body: "",
@@ -11,12 +9,15 @@ function NewEntry() {
         mood: "",
         date: {}
     });
-
+    
     const history =useHistory()
     const { id } = useParams();
     const match = useRouteMatch();
-
+    
+    
     useEffect(() => {
+        handleSetUser(userStatus);
+
         if(match.path === "/Entry/:id/Edit"){
             fetch(`http://localhost:8002/journals/${id}`)
             .then(res => res.json())
@@ -25,12 +26,18 @@ function NewEntry() {
             setFormData({
                 title: "",
                 text_body: "",
-                author: "",
+                author: user ? user.username : "",
                 mood: "",
                 date: {}
             })
         }
     }, [match.path]);
+
+    const userStatus = JSON.parse(localStorage.getItem("journalUser"));
+    //if user is not logged in, redirect to Login
+    if(userStatus === null){
+        return <Redirect to="/Login"></Redirect>
+    }
     
     function handleChange(e) {
         setFormData({
@@ -79,13 +86,13 @@ function NewEntry() {
                     value={formData.title}
                     onChange={handleChange}
                 />
-                <input
+                {/* <input
                     type="text"
                     name="author"
                     placeholder="Enter your name..."
                     value={formData.author}
                     onChange={handleChange}
-                />
+                /> */}
                 <label>
                     <select onChange={handleChange} name="mood" placeholder="How Am I Feeling?" value={formData.mood}>
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
