@@ -5,6 +5,7 @@ import Home from "./Home";
 import NewEntry from "./NewEntry";
 import Entry from "./Entry";
 import Login from './Login';
+import Footer from "./Footer";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -40,7 +41,8 @@ function App() {
         <Route path="/">
           <Home user={user} handleSetUser={handleSetUser}/>
         </Route>
-      </Switch>
+       </Switch>
+       <Footer />
     </div>
   );
 }

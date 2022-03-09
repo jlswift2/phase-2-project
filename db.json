@@ -5,74 +5,48 @@
       "title": "Help me",
       "text_body": "I am trapped in the database and cannot get out!",
       "author": "json",
-      "mood": "sad"
+      "mood": "sad",
+      "date": "2022-03-01T02:17:08.027Z"
     },
     {
       "id": 2,
       "title": "Blog Post",
       "text_body": "I really need to do it. For real. I have not even thought about it yet.",
       "author": "Justin",
-      "mood": "tired"
+      "mood": "tired",
+      "date": "2022-03-02T02:17:06.027Z"
     },
     {
       "id": 3,
       "title": "A haiku",
       "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
       "author": "unknown",
-      "mood": "happy"
+      "mood": "happy",
+      "date": "2022-03-02T02:17:08.027Z"
     },
     {
-      "title": "hi",
-      "name": "gi",
-      "entry": "frfr",
-      "mood": "Stressed",
+      "title": "my cat",
+      "text_body": "i love my cats",
+      "author": "Vi",
+      "mood": "Tired",
+      "date": "2022-03-03T02:17:08.027Z",
       "id": 4
     },
     {
-      "title": "hello",
-      "name": "vi",
-      "entry": "awesome day",
-      "mood": "Excitement",
-      "id": 5
-    },
-    {
-      "title": "okay day today",
-      "name": "brian vu",
-      "text_body": "the day was really good!",
-      "mood": "Happy",
-      "id": 6
-    },
-    {
-      "formData": {
-        "title": "meh meh",
-        "text_body": "yeppi!",
-        "author": "justin",
-        "mood": "",
-        "": "Tired"
-      },
+      "title": "sdfgsdfg",
+      "text_body": "dfsbbbsere",
+      "author": "Justin",
+      "mood": "Sad",
+      "date": "2022-03-09T02:17:08.027Z",
       "id": 7
     },
     {
-      "title": "hello",
-      "text_body": "hellooooo",
-      "author": "justin",
-      "mood": "",
-      "": "Tired",
+      "title": "boop",
+      "text_body": "gjhghjkghjg",
+      "author": "Justin",
+      "mood": "Happy",
+      "date": "2022-03-09T15:18:04.512Z",
       "id": 8
-    },
-    {
-      "title": "me",
-      "text_body": "so tired",
-      "author": "brian vu",
-      "mood": "Tired",
-      "id": 9
-    },
-    {
-      "title": "Example",
-      "text_body": "yay it works...?",
-      "author": "brian vu",
-      "mood": "Excitement",
-      "id": 10
     }
   ],
   "users": [

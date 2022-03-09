@@ -25,7 +25,7 @@ function Entry({ user, handleSetUser }) {
     }
 
   return (
-    <div>
+    <div id="entryEdit">
       {entry.title} by {entry.author}
       <br/>
       {entry.text_body}

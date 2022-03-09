@@ -6,7 +6,8 @@ function NewEntry({ user, handleSetUser }) {
         title: "",
         text_body: "",
         author: "",
-        mood: ""
+        mood: "",
+        date: {}
     });
     
     const history =useHistory()
@@ -26,7 +27,8 @@ function NewEntry({ user, handleSetUser }) {
                 title: "",
                 text_body: "",
                 author: user ? user.username : "",
-                mood: ""
+                mood: "",
+                date: {}
             })
         }
     }, [match.path]);
@@ -48,14 +50,19 @@ function NewEntry({ user, handleSetUser }) {
         e.preventDefault()
             //making a new post 
         if(match.path === "/NewEntry"){
+            const newEntry = {
+                ...formData,
+                date: new Date()
+            }
             fetch("http://localhost:8002/journals",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(formData)
+            body: JSON.stringify(newEntry)
         })
-        .then( response => response.json())
-        .then( data => history.push("/"));
+                .then( response => response.json())
+                .then( data => history.push("/"));
         }
+
             //making a post edit 
         if(match.path === "/Entry/:id/Edit"){
             fetch(`http://localhost:8002/journals/${id}`,{
@@ -69,7 +76,7 @@ function NewEntry({ user, handleSetUser }) {
     }
 
     return (
-        <div className="new-entry-form" onSubmit={handleSubmit}>
+        <div id="new-entry-form" onSubmit={handleSubmit}>
             <h2>New Entry</h2>
             <form>
                 <input
