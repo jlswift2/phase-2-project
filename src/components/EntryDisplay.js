@@ -4,13 +4,33 @@ import EntryCard from "./EntryCard";
 function Home() {
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState("all");
+  const [isDescending, setIsDescending] = useState(true)
 
   useEffect(() => {
     fetch("http://localhost:8002/journals")
       .then(res => res.json())
       .then(data => setEntries(data));
+
+    console.log(entries)
+    handleOrderChange()
   }, []);
 
+  //Order Functions
+  const handleOrderChange = () => {
+    if (isDescending === true) {
+      entries.sort(function(a,b){
+        return new Date(b.date) - new Date(a.date);
+      })
+    } else {
+      entries.sort(function(a,b){
+        return new Date(a.date) - new Date(b.date);
+      })
+    }
+    setIsDescending(!isDescending)
+  }
+
+
+  // Filter Functions
   const handleFilterChange = event => {
     setFilter(event.target.value);
   }
@@ -21,6 +41,7 @@ function Home() {
     const filteredEntries = entries.filter(entry => entry.mood === filter);
     return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
   }
+
 
 
 
@@ -41,6 +62,13 @@ function Home() {
           <option value="Contempt">Contempt</option>
           <option value="Stressed">Stressed</option>
         </select>
+      </form>
+      <form onChange={handleOrderChange}>
+        <label htmlFor="order">Order by: </label>
+        <select name="order">
+          <option value="descending">Newest First</option>
+          <option value="ascending">Oldest First</option>  
+        </select>  
       </form>
 
       {renderFilteredEntries(filter)}
