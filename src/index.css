@@ -128,10 +128,22 @@ justify-content: center;
 
 /* start of entry card style*/
 #entryContainer{
-  min-height: 100vh;
+min-height: 100vh;
  overflow: hidden;
  display: block;
  position: relative;
  padding-bottom: 100px; 
 }
 /* end of entry card style*/
+
+
+
+/* start of entry individual view style*/
+#entryEdit{
+min-height: 100vh;
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; 
+}
+/* start of entry individual view style*/
