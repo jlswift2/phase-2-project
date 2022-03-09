@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import EntryDisplay from "./EntryDisplay";
-import Footer from "./Footer";
 
 function Home() {
 
@@ -8,7 +7,6 @@ function Home() {
 
   return (
     <>
-
       <section>
         <div id="titleContainer">
           <div id="titleBox">
