@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useHistory, useParams, useRouteMatch } from "react-router-dom";
+import { useHistory, useParams, useRouteMatch, Redirect } from "react-router-dom";
 
-function NewEntry() {
+function NewEntry({ user }) {
     const [formData, setFormData] = useState({
         title: "",
         text_body: "",
@@ -27,6 +27,11 @@ function NewEntry() {
             })
         }
     }, [match.path]);
+
+    //checks if a user is logged in
+    if(!user.username){
+        return <Redirect to="/Login"></Redirect>
+    }
     
     function handleChange(e) {
         setFormData({

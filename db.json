@@ -25,7 +25,7 @@
       "title": "hi",
       "name": "gi",
       "entry": "frfr",
-      "mood": "Happy",
+      "mood": "Stressed",
       "id": 4
     },
     {
@@ -39,7 +39,7 @@
       "title": "okay day today",
       "name": "brian vu",
       "text_body": "the day was really good!",
-      "mood": "Excitement",
+      "mood": "Happy",
       "id": 6
     },
     {
@@ -59,6 +59,30 @@
       "mood": "",
       "": "Tired",
       "id": 8
+    },
+    {
+      "title": "me",
+      "text_body": "so tired",
+      "author": "brian vu",
+      "mood": "Tired",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "username": "brian vu",
+      "favAnimal": "omg",
+      "id": 1
+    },
+    {
+      "username": "brian vu",
+      "favAnimal": "qweqweqwe",
+      "id": 2
+    },
+    {
+      "username": "brian vu",
+      "favAnimal": "omg",
+      "id": 3
     }
   ]
 }

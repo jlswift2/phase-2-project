@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import EntryCard from "./EntryCard";
 
-function Home() {
+function Home({ user }) {
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState("all");
 

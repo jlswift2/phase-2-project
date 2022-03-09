@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams, useHistory } from "react-router-dom";
 
-function Entry() {
+function Entry({ user }) {
+  console.log(user)
   const { id } = useParams();
   const history =useHistory()
   const [entry, setEntry] = useState({});
@@ -11,6 +12,11 @@ function Entry() {
     .then(res => res.json())
     .then(data => setEntry(data));
   }, [id]);
+
+  //checks if the logged in user is the same as entry author
+  if(user.username === entry.author){
+    console.log("here")
+  }
 
   function handleDelete(e) {
       fetch(`http://localhost:8002/journals/${id}`, {
