@@ -22,10 +22,10 @@
       "mood": "happy"
     },
     {
-      "title": "hi",
-      "name": "gi",
-      "entry": "frfr",
-      "mood": "Happy",
+      "title": "my cat",
+      "text_body": "i love my cats",
+      "author": "Vi",
+      "mood": "Tired",
       "id": 4
     },
     {
@@ -49,6 +49,7 @@
       "mood": "Sad",
       "date": "2022-03-09T02:17:08.027Z",
       "id": 7
+
     }
   ]
 }

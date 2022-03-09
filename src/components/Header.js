@@ -2,10 +2,20 @@ import React from 'react'
 import NavBar from './NavBar'
 
 function Header() {
+
+
+
+
+
+
+
+
+
   return (
-    <div>
+    <header id="navbar">
+      <h1 id="welcome">Welcome!</h1> 
         <NavBar />
-    </div>
+    </header>
   )
 }
 
