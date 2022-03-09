@@ -67,5 +67,17 @@
       "mood": "Tired",
       "id": 9
     }
+  ],
+  "users": [
+    {
+      "username": "qwe",
+      "favAnimal": "qweqwe",
+      "id": 1
+    },
+    {
+      "username": "sc",
+      "favAnimal": "wqqqqqq",
+      "id": 2
+    }
   ]
 }

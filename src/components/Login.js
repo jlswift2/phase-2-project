@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
 
 function Login({ handleSetUser, signUp }) {
@@ -19,9 +19,24 @@ function Login({ handleSetUser, signUp }) {
   const handleSubmit = event => {
     event.preventDefault();
 
-    localStorage.setItem("journalUser", JSON.stringify(userData));
-    handleSetUser(userData);
-    history.push("/");
+    if (signUp) {
+      fetch("http://localhost:8002/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userData)
+      })
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem("journalUser", JSON.stringify(data));
+        handleSetUser(userData);
+        history.push("/");
+      });
+    }
+    else{
+      console.log("login");
+    }
   }
 
   const handleSignUp = signUp => {
@@ -36,7 +51,7 @@ function Login({ handleSetUser, signUp }) {
       </>
     );
   }
-  
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
