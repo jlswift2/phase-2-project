@@ -66,6 +66,13 @@
       "author": "brian vu",
       "mood": "Tired",
       "id": 9
+    },
+    {
+      "title": "Example",
+      "text_body": "yay it works...?",
+      "author": "brian vu",
+      "mood": "Excitement",
+      "id": 10
     }
   ],
   "users": [

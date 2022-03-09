@@ -19,24 +19,15 @@ function Login({ handleSetUser, signUp }) {
   const handleSubmit = event => {
     event.preventDefault();
 
-    if (signUp) {
-      fetch("http://localhost:8002/users", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(userData)
-      })
-      .then(res => res.json())
-      .then(data => {
-        localStorage.setItem("journalUser", JSON.stringify(data));
+    
+        localStorage.setItem("journalUser", JSON.stringify(userData));
         handleSetUser(userData);
         history.push("/");
-      });
-    }
-    else{
+      
+    
+   
       console.log("login");
-    }
+    
   }
 
   const handleSignUp = signUp => {
