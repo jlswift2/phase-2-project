@@ -22,11 +22,7 @@ function Home() {
           </div>
         </div>
       </section>
-
       <EntryDisplay />
-
-      <Footer />
-
     </>
 
   )

@@ -108,9 +108,7 @@ justify-content: center;
 }
 /* end of footer card styles */
 
-
-
-
+/* start of entry form style*/
 .new-entry-form {
   text-align: center;
 }
@@ -118,7 +116,17 @@ justify-content: center;
 #entry {
   height: 100px;
 }
+#new-entry-form{
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; 
+}
 
+/* end of entry form style*/
+
+/* start of entry card style*/
 #entryContainer{
   min-height: 100vh;
  overflow: hidden;
@@ -126,3 +134,4 @@ justify-content: center;
  position: relative;
  padding-bottom: 100px; 
 }
+/* end of entry card style*/
