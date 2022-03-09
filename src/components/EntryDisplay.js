@@ -10,9 +10,6 @@ function Home() {
     fetch("http://localhost:8002/journals")
       .then(res => res.json())
       .then(data => setEntries(data));
-
-    console.log(entries)
-    handleOrderChange()
   }, []);
 
   //Order Functions
