@@ -30,7 +30,7 @@ function Entry() {
       <Link to={`/Entry/${entry.id}/Edit`}>
         <button>Edit</button>
       </Link>
-      <button onClick={handleDelete}>Delete</button>
+      <button onClick={handleDelete} >Delete</button>
     </div>
   )
 }

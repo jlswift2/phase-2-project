@@ -6,11 +6,6 @@ function Header() {
 
 
 
-
-
-
-
-
   return (
     <header id="navbar">
       <h1 id="welcome">Welcome!</h1> 
