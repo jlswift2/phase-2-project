@@ -27,6 +27,29 @@
       "author": "Vi",
       "mood": "Tired",
       "id": 4
+    },
+    {
+      "title": "hello",
+      "name": "vi",
+      "entry": "awesome day",
+      "mood": "Excitement",
+      "id": 5
+    },
+    {
+      "title": "okay day today",
+      "name": "brian vu",
+      "text_body": "the day was really good!",
+      "mood": "Excitement",
+      "id": 6
+    },
+    {
+      "title": "sdfgsdfg",
+      "text_body": "dfsbbbsere",
+      "author": "Justin",
+      "mood": "Sad",
+      "date": "2022-03-09T02:17:08.027Z",
+      "id": 7
+
     }
   ]
 }
