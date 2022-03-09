@@ -16,7 +16,7 @@ function Home() {
             <div id="titleDescription">How are you? 😊</div>
           </div>
           <div id="midArrow">
-            <a href="#navbar" className="arrow">
+            <a href="#entryContainer" className="arrow">
               <img className="arrow" src="https://cdn1.iconfinder.com/data/icons/general-ui-outlined-thick/24/chevron-down-512.png" alt="arrow" />
             </a>
           </div>
