@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import EntryCard from "./EntryCard";
 
+
+const moodArray = ["Happy","Tired","Sad","Excitement","Contempt","Stressed"]
+
+
+
+
 function Home() {
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState("all");
@@ -47,15 +53,15 @@ function Home() {
     }
   }
 
+  const moodList = moodArray.map( mood => 
+  <button id="moodFilter" onClick={(event) =>  setFilter(event.target.value)}>
+    {mood}
+  </button>);
 
-
-
-
-
-  
   return (
     <div id="entryContainer">
       <h1>Home Page</h1>
+      {moodList}
       <form onChange={handleFilterChange}>
         <label htmlFor="filter">Filter by: </label>
         <select name="filter">
@@ -74,9 +80,11 @@ function Home() {
           <option value="descending">Newest First</option>
           <option value="ascending">Oldest First</option>  
         </select>  
-      </form>
+       </form>
 
-      {renderFilteredEntries(filter)}
+        <div id="container">
+          {renderFilteredEntries(filter)}
+        </div>
     </div>
   )
 }

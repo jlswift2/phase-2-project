@@ -11,8 +11,6 @@ body {
   position: relative;
 }
 
-/* start of navbar styling */
-
 header{
   font-family: 'Rubik';
   display:flex;
@@ -21,6 +19,8 @@ header{
   height:110px;
   background-color:  #e8e8e8;
 }
+
+/* start of navbar styling */
 
 #welcome{
   cursor: pointer;
@@ -49,7 +49,7 @@ header{
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 750px;
   background-color: #e8e8e8;;
   text-align: left;
 }
@@ -128,14 +128,79 @@ justify-content: center;
 
 /* start of entry card style*/
 #entryContainer{
-min-height: 100vh;
+  background-color: #F8F2EE;
+  min-height: 100vh;
  overflow: hidden;
  display: block;
  position: relative;
  padding-bottom: 100px; 
 }
-/* end of entry card style*/
 
+#cardImg {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+#container {
+  width:auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+.card {
+  padding:100px;
+  width:250px;
+  height:400px;
+  background-color: white;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+}
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  /* color: #ff8886; */
+  color: #ffbdc7;
+  background-color: #fff0f3;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.card__details {
+  padding: 16px 8px 8px 8px;
+}
+/* end of entry card style*/
 
 
 /* start of entry individual view style*/
