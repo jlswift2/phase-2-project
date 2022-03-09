@@ -10,16 +10,22 @@ function Home() {
     fetch("http://localhost:8002/journals")
       .then(res => res.json())
       .then(data => setEntries(data));
+
+
   }, []);
 
+  useEffect(() => {
+    handleOrderChange(entries);
+  }, [entries])
+
   //Order Functions
-  const handleOrderChange = () => {
-    if (isDescending === true) {
-      entries.sort(function(a,b){
+  const handleOrderChange = (e, array = entries) => {
+    if (isDescending === false) {
+      array.sort(function(a,b){
         return new Date(b.date) - new Date(a.date);
       })
     } else {
-      entries.sort(function(a,b){
+      array.sort(function(a,b){
         return new Date(a.date) - new Date(b.date);
       })
     }
@@ -33,10 +39,12 @@ function Home() {
   }
 
   const renderFilteredEntries = filter => {
-    if (filter === "all") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
-
-    const filteredEntries = entries.filter(entry => entry.mood === filter);
-    return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    if (filter === "all") {
+      return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    } else {
+      const filteredEntries = entries.filter(entry => entry.mood === filter);
+      return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    }
   }
 
 
