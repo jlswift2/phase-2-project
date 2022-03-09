@@ -5,119 +5,65 @@
       "title": "Help me",
       "text_body": "I am trapped in the database and cannot get out!",
       "author": "json",
-      "mood": "sad"
+      "mood": "sad",
+      "date": "2022-03-01T02:17:08.027Z"
     },
     {
       "id": 2,
       "title": "Blog Post",
       "text_body": "I really need to do it. For real. I have not even thought about it yet.",
       "author": "Justin",
-      "mood": "tired"
+      "mood": "tired",
+      "date": "2022-03-02T02:17:06.027Z"
     },
     {
       "id": 3,
       "title": "A haiku",
       "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
       "author": "unknown",
-      "mood": "happy"
+      "mood": "happy",
+      "date": "2022-03-02T02:17:08.027Z"
     },
     {
       "title": "my cat",
       "text_body": "i love my cats",
       "author": "Vi",
       "mood": "Tired",
+      "date": "2022-03-03T02:17:08.027Z",
       "id": 4
     },
     {
-      "title": "frfr",
-      "text_body": "frf",
-      "author": "frfr",
-      "mood": "Sad",
+
+      "title": "hello",
+      "name": "vi",
+      "entry": "awesome day",
+      "mood": "Excitement",
+      "date": "2022-03-05T02:17:08.027Z",
       "id": 5
     },
     {
-      "title": "frfr",
-      "text_body": "frfrf",
-      "author": "frfr",
-      "mood": "Sad",
+      "title": "okay day today",
+      "name": "brian vu",
+      "text_body": "the day was really good!",
+      "mood": "Excitement",
+      "date": "2022-03-07T02:17:08.027Z",
       "id": 6
     },
     {
-      "title": "yolo",
-      "text_body": "deede",
-      "author": "meow",
-      "mood": "Excitement",
+      "title": "sdfgsdfg",
+      "text_body": "dfsbbbsere",
+      "author": "Justin",
+      "mood": "Sad",
+      "date": "2022-03-09T02:17:08.027Z",
       "id": 7
     },
     {
-      "title": "3r34r3434",
-      "text_body": "fefefe",
-      "author": "ferfe",
-      "mood": "Excitement",
-      "id": 8
-    },
-    {
-      "title": "1234",
-      "text_body": "44444",
-      "author": "1234",
-      "mood": "Excitement",
-      "id": 9
-    },
-    {
-      "title": "3333",
-      "text_body": "33333333",
-      "author": "33333",
-      "mood": "Contempt",
-      "id": 10
-    },
-    {
-      "title": "title",
-      "text_body": "entry",
-      "author": "vi",
-      "mood": "Sad",
-      "id": 11
-    },
-    {
-      "title": "vi",
-      "text_body": "hi",
-      "author": "vi",
-      "mood": "Sad",
-      "id": 12
-    },
-    {
-      "title": "hi",
-      "text_body": "ii",
-      "author": "vi",
-      "mood": "Sad",
-      "id": 13
-    },
-    {
-      "title": "fff",
-      "text_body": "ffff",
-      "author": "fff",
-      "mood": "Sad",
-      "id": 14
-    },
-    {
-      "title": "hi",
-      "text_body": "kkk",
-      "author": "hi",
+      "title": "boop",
+      "text_body": "gjhghjkghjg",
+      "author": "Justin",
       "mood": "Happy",
-      "id": 15
-    },
-    {
-      "title": "kk",
-      "text_body": "kkk",
-      "author": "kkk",
-      "mood": "Sad",
-      "id": 16
-    },
-    {
-      "title": "kk",
-      "text_body": "66",
-      "author": "Vim",
-      "mood": "Excitement",
-      "id": 17
+      "date": "2022-03-09T15:18:04.512Z",
+      "id": 8
     }
   ]
 }
