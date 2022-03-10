@@ -31,7 +31,7 @@ function EntryCard({ entry, user }) {
         <div className="card_details">
           <span class="tag">{entry.mood}</span>
           <div class="name">{entry.title} By: {entry.author}</div>
-          <div class="date">{entry.date}</div>
+          <div class="date">{new Date(entry.date).toLocaleString()}</div>
           <Link to={`/Entry/${entry.id}`} style={{ textDecoration: 'none' }}>
             <button>Read more</button>
           </Link>
