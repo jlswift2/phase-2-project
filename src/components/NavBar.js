@@ -22,18 +22,6 @@ function NavBar({ user, handleSetUser }) {
         </ul>
       </nav>
   )
-
-  //function NavBar() {
-//   return( 
-//     <div className="navbar">
-//       <NavLink to="/">Home</NavLink>
-//       <NavLink to="/NewEntry">New Entry</NavLink>
-//       {
-//         user === null ? <NavLink to="/Login">Log In</NavLink>
-//         : <NavLink to="/" onClick={() => logoutUser()}>Log Out</NavLink>
-//       }
-//     </div>
-//   );
 }
 
 export default NavBar;
