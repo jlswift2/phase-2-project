@@ -2,11 +2,6 @@ import React from "react";
 import EntryDisplay from "./EntryDisplay";
 
 function Home({ user, handleSetUser }) {
-
-
-
-
-  
   return (
     <>
       <section>

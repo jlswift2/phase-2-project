@@ -47,42 +47,13 @@
       "mood": "Happy",
       "date": "2022-03-09T15:18:04.512Z",
       "id": 8
-    },
-    {
-      "title": "",
-      "text_body": "",
-      "author": "",
-      "mood": "",
-      "date": "2022-03-10T13:27:46.044Z",
-      "id": 9
-    },
-    {
-      "title": "",
-      "text_body": "",
-      "author": "",
-      "mood": "",
-      "date": "2022-03-10T14:22:34.571Z",
-      "id": 10
-    },
-    {
-      "title": "test",
-      "text_body": "meow",
-      "author": "",
-      "mood": "Excitement",
-      "date": "2022-03-10T14:32:44.798Z",
-      "id": 11
     }
   ],
   "users": [
     {
-      "username": "qwe",
-      "favAnimal": "qweqwe",
+      "username": "brian vu",
+      "favAnimal": "kangaroo",
       "id": 1
-    },
-    {
-      "username": "sc",
-      "favAnimal": "wqqqqqq",
-      "id": 2
     }
   ]
 }
