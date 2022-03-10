@@ -1,14 +1,20 @@
 import React from "react";
 import EntryDisplay from "./EntryDisplay";
+import { fadeInUp } from "react-animations"
+import styled, { keyframes } from "styled-components";
 
 function Home({ user, handleSetUser }) {
+  const FadeInUp = styled.div`animation: 3s ${keyframes`${fadeInUp}`}`;
+  
   return (
     <>
       <section>
         <div id="titleContainer">
           <div id="titleBox">
-            <div id="title">Hello! (user's name).</div>
-            <div id="titleDescription">How are you? 😊</div>
+            <FadeInUp>
+              <div id="title" >Hello! (user's name).</div>
+              <div id="titleDescription">How are you? 😊</div>
+            </FadeInUp>
           </div>
           <div id="midArrow">
             <a href="#entryContainer" className="arrow">
