@@ -15,7 +15,6 @@ function NewEntry({ user, handleSetUser }) {
     const { id } = useParams();
     const match = useRouteMatch();
     
-    
     useEffect(() => {
         handleSetUser(userStatus);
 
@@ -29,7 +28,8 @@ function NewEntry({ user, handleSetUser }) {
                 text_body: "",
                 author: user ? user.username : "",
                 mood: "",
-                date: {}
+                date: {},
+                img: ""
             })
         }
     }, [match.path]);
@@ -55,13 +55,30 @@ function NewEntry({ user, handleSetUser }) {
                 ...formData,
                 date: new Date()
             }
-            fetch("http://localhost:8002/journals",{
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(newEntry)
-        })
+            console.log(newEntry.mood)
+
+            if (newEntry.img === "") {
+                fetch(`https://api.giphy.com/v1/gifs/random?tag=${newEntry.mood}&api_key=rgi9jD5HiZd63HBPZWvUnPqpibAw52Ri&limit=1`)
+                .then(r => r.json())
+                .then(gif => {
+                    newEntry.img = gif.data.images.original.url
+                    fetch("http://localhost:8002/journals",{
+                        method: "POST",
+                        headers: {"Content-Type": "application/json"},
+                        body: JSON.stringify(newEntry)
+                    })
+                    .then( response => response.json())
+                    .then( data => history.push("/"));
+                })    
+            } else {
+                fetch("http://localhost:8002/journals",{
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify(newEntry)
+                })
                 .then( response => response.json())
                 .then( data => history.push("/"));
+                }
         }
 
             //making a post edit 
