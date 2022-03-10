@@ -68,7 +68,7 @@ function Entry({ user, handleSetUser }) {
       <h3 style={{ textAlign: "center" }}>My Bubble</h3>
       <div id="entryContent">
         <img id="entryImg" src={entry.img} alt={entry.title} />
-        <p className="textArea" id="entryBubble" >{entry.text_body}</p>
+        <p id="entryBubble" >{entry.text_body}</p>
       </div>
       <IoMdHeart onClick={() => handleLikesClick()}></IoMdHeart> {entry.likes}
 
