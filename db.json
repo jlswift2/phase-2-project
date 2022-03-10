@@ -56,6 +56,15 @@
       "date": "2022-03-10T03:23:32.219Z",
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 9
+    },
+    {
+      "title": "blorp",
+      "text_body": "hfjgjhgfjhgfrytfdbdfb",
+      "author": "jswift",
+      "mood": "Loved",
+      "date": "2022-03-10T15:24:29.314Z",
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "id": 10
     }
   ],
   "users": [
@@ -63,6 +72,11 @@
       "username": "brian vu",
       "favAnimal": "kangaroo",
       "id": 1
+    },
+    {
+      "username": "jswift",
+      "favAnimal": "dog",
+      "id": 2
     }
   ]
 }
