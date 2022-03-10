@@ -6,6 +6,7 @@ import NewEntry from "./NewEntry";
 import Entry from "./Entry";
 import Login from './Login';
 import Footer from "./Footer";
+import Mission from "./Mission"
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,6 +26,9 @@ function App() {
       <Switch>
         <Route exact path="/Login">
           <Login handleSetUser={handleSetUser}/>
+        </Route>
+        <Route exact path="/Mission">
+          <Mission handleSetUser={handleSetUser}/>
         </Route>
         <Route exact path="/SignUp">
           <Login handleSetUser={handleSetUser} signUp={true}/>

@@ -18,6 +18,7 @@ function NavBar({ user, handleSetUser }) {
           : <li className="nav-item"> <NavLink style={{ textDecoration: 'none', color: "inherit" }} to="/" onClick={() => logoutUser()}>Log Out</NavLink> </li>
       }
           <li className="nav-item"> <NavLink  style={{ textDecoration: 'none', color: "inherit" }} to="/">Home</NavLink> </li>
+          <li className="nav-item"> <NavLink  style={{ textDecoration: 'none', color: "inherit" }} to="/Mission">Mission</NavLink> </li>
           <li className="nav-item"> <NavLink style={{ textDecoration: 'none', color: "inherit" }} to="/NewEntry">New Bubble</NavLink> </li>
         </ul>
       </nav>
