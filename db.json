@@ -6,7 +6,8 @@
       "text_body": "I am trapped in the database and cannot get out!",
       "author": "json",
       "mood": "sad",
-      "date": "2022-03-01T02:17:08.027Z"
+      "date": "2022-03-01T02:17:08.027Z",
+      "likes": 0
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "text_body": "I really need to do it. For real. I have not even thought about it yet.",
       "author": "Justin",
       "mood": "tired",
-      "date": "2022-03-02T02:17:06.027Z"
+      "date": "2022-03-02T02:17:06.027Z",
+      "likes": 7
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
       "author": "unknown",
       "mood": "happy",
-      "date": "2022-03-02T02:17:08.027Z"
+      "date": "2022-03-02T02:17:08.027Z",
+      "likes": 8
     },
     {
       "title": "my cat",
@@ -30,6 +33,7 @@
       "author": "Vi",
       "mood": "Tired",
       "date": "2022-03-03T02:17:08.027Z",
+      "likes": 1,
       "id": 4
     },
     {
@@ -38,6 +42,7 @@
       "author": "Justin",
       "mood": "Sad",
       "date": "2022-03-09T02:17:08.027Z",
+      "likes": 3,
       "id": 7
     },
     {
@@ -46,6 +51,7 @@
       "author": "Justin",
       "mood": "Happy",
       "date": "2022-03-09T15:18:04.512Z",
+      "likes": 7,
       "id": 8
     },
     {
@@ -54,6 +60,7 @@
       "author": "jswift",
       "mood": "Tired",
       "date": "2022-03-10T03:23:32.219Z",
+      "likes": 7,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 9
     },
@@ -63,6 +70,7 @@
       "author": "jswift",
       "mood": "Loved",
       "date": "2022-03-10T15:24:29.314Z",
+      "likes": 2,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 10
     },
@@ -72,6 +80,7 @@
       "author": "brian vu",
       "mood": "Tired",
       "date": "2022-03-10T15:55:20.517Z",
+      "likes": 7,
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
     }

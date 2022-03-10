@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams, useHistory } from "react-router-dom";
+import { IoMdHeart } from "react-icons/io";
 
 const moodArray = ["Happy", "Tired", "Sad", "Excitement", "Loved", "Stressed"]
 
@@ -31,6 +32,26 @@ function Entry({ user, handleSetUser }) {
       {mood}
     </button>);
 
+  const handleLikesClick = () => {
+    if(user){
+      fetch(`http://localhost:8002/journals/${entry.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          likes: ++entry.likes
+        })
+      })
+      .then(res => res.json())
+      .then(data => setEntry(data));
+    }
+
+    else{
+      return null;
+    }
+  }
+
   return (
     <div id="entryEdit">
       <div id="entryTitle">
@@ -49,7 +70,7 @@ function Entry({ user, handleSetUser }) {
         <img id="entryImg" src="https://i.pinimg.com/736x/1b/ef/b5/1befb5723f54627768e1d77642ca4d45.jpg" alt="CATTTTTTT" />
         <p className="textArea" id="entryBubble" >{entry.text_body}</p>
       </div>
-
+      <IoMdHeart onClick={() => handleLikesClick()}></IoMdHeart> {entry.likes}
 
       {
         user === null || user.username !== entry.author ? null
