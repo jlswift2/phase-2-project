@@ -17,7 +17,11 @@ header{
   justify-content: flex-end;
   align-items: center;
   height:110px;
-  background-color:  #e8e8e8;
+  background-color: #f3faff;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
 }
 
 /* start of navbar styling */
@@ -26,6 +30,7 @@ header{
   cursor: pointer;
   margin-right: auto;
   margin-left: 100px;
+  color:#7AD7F0
   }
 
 .navbar-nav{
@@ -50,7 +55,7 @@ header{
   flex-direction: column;
   width: 100%;
   height: 750px;
-  background-color: #e8e8e8;;
+  background-color: #f3faff;
   text-align: left;
 }
 #titleBox {
@@ -82,10 +87,12 @@ header{
 #midArrow{
 display: flex;
 justify-content: center;
+position: relative;
 }
 .arrow{
   height: 50px;
   width: 50px;
+  animation-timing-function: ease-in-out;
 }
 /* end of home page styling */
 
@@ -96,8 +103,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   font-family: Rubik;
-  color:grey;
-  background-color:  #e8e8e8;
+  background-color: #f3faff;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -128,7 +134,8 @@ justify-content: center;
 
 /* start of entry card style*/
 #entryContainer{
-  background-color: #F8F2EE;
+  font-family: 'Rubik';
+  background-color: #f7f7f7;
   min-height: 100vh;
  overflow: hidden;
  display: block;
@@ -162,6 +169,11 @@ justify-content: center;
   border: 1px solid #bacdd8;
   padding: 8px;
   border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .tag {
   padding: 4px 8px;
@@ -212,3 +224,66 @@ min-height: 100vh;
  padding-bottom: 100px; 
 }
 /* start of entry individual view style*/
+
+/* start of entry display style*/
+#moodContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+#homePage{
+  text-align: center;
+  text-decoration: underline dashed 1px #000;
+}
+
+/* end of entry display style*/
+
+
+
+
+/* start of login style */
+#loginContainer{
+  font-family: 'Rubik';
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 100px; 
+  background-color: #d8f3fa;
+  gap:10px;
+}
+
+.inputBox{
+  border-radius:25px;
+  border:none;
+  padding: 20px;
+  gap:10px;
+}
+
+#inputContainer{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+/* .btn2{
+  border-top: 1px solid ;
+  padding-top:15px;
+} */
+#logo{
+  width: 100%;
+  height: 214px;
+  margin-bottom:40px;
+  border-bottom: 1px solid ;
+}
+#loginContent{
+  display:flex;
+  flex-direction:column;
+  gap: 40px;
+  align-content:space-around;
+}
+/* end of login style */

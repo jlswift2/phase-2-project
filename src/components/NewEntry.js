@@ -100,7 +100,7 @@ function NewEntry({ user, handleSetUser }) {
                         <option value="Tired">Tired</option>
                         <option value="Sad">Sad</option>
                         <option value="Excitement">Excitement</option>
-                        <option value="Contempt">Contempt</option>
+                        <option value="Loved">Loved</option>
                         <option value="Stressed">Stressed</option>
                     </select>
                 </label>

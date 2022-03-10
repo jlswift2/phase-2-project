@@ -12,6 +12,7 @@ function EntryDisplay({ entry }) {
         <div className="card_details">
           <span class="tag">{entry.mood}</span>
           <div class="name">{entry.title}</div>
+          <div class="date">{entry.date}</div>
           <p>{entry.text_body}</p>
           <Link to={`/Entry/${entry.id}`} style={{ textDecoration: 'none' }}>
             <button>Read more</button>

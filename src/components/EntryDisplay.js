@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import EntryCard from "./EntryCard";
 
 
-const moodArray = ["Happy","Tired","Sad","Excitement","Contempt","Stressed"]
+const moodArray = ["All", "Happy", "Tired", "Sad", "Excitement", "Loved", "Stressed"]
 
 function EntryDisplay({ user, handleSetUser }) {
   const [entries, setEntries] = useState([]);
@@ -23,14 +23,14 @@ function EntryDisplay({ user, handleSetUser }) {
     handleOrderChange(entries);
   }, [entries])
 
-  //Order Functions
+  //Date Order Functions
   const handleOrderChange = (e, array = entries) => {
     if (isDescending === false) {
-      array.sort(function(a,b){
+      array.sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
       })
     } else {
-      array.sort(function(a,b){
+      array.sort(function (a, b) {
         return new Date(a.date) - new Date(b.date);
       })
     }
@@ -38,7 +38,7 @@ function EntryDisplay({ user, handleSetUser }) {
   }
 
 
-  // Filter Functions
+  // Filter Mood Functions
   const handleFilterChange = event => {
     setFilter(event.target.value);
   }
@@ -55,39 +55,25 @@ function EntryDisplay({ user, handleSetUser }) {
     return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
   }
 
-  const moodList = moodArray.map( mood => 
-  <button id="moodFilter" onClick={(event) =>  setFilter(event.target.value)}>
-    {mood}
-  </button>);
+  const moodList = moodArray.map(mood =>
+    <button id="moodFilter" value={mood} onClick={handleFilterChange} >
+      {mood}
+    </button>);
+
+
 
   return (
     <div id="entryContainer">
-      <h1>Home Page</h1>
-      {moodList}
-      <form onChange={handleFilterChange}>
-        <label htmlFor="filter">Filter by: </label>
-        <select name="filter">
-          <option value="All">All</option>
-          {user ? <option value="Your Entries">Your Entries</option> : null}
-          <option value="Happy">Happy</option>
-          <option value="Tired">Tired</option>
-          <option value="Sad">Sad</option>
-          <option value="Excitement">Excitement</option>
-          <option value="Contempt">Contempt</option>
-          <option value="Stressed">Stressed</option>
-        </select>
-      </form>
-      <form onChange={handleOrderChange}>
-        <label htmlFor="order">Order by: </label>
-        <select name="order">
-          <option value="descending">Newest First</option>
-          <option value="ascending">Oldest First</option>  
-        </select>  
-       </form>
+      <h1 id="homePage">Thought Bubbles</h1>
+      <div id="moodContainer">
+        {moodList}
+        <button  onClick={handleOrderChange} value="descending">Newest Bubbles</button>
+        <button onClick={handleOrderChange} value="ascending">Oldest Bubbles</button>
+      </div>
 
-        <div id="container">
-          {renderFilteredEntries(filter)}
-        </div>
+      <div id="container">
+        {renderFilteredEntries(filter)}
+      </div>
     </div>
   )
 }
