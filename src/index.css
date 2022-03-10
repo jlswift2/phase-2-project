@@ -217,11 +217,66 @@ button {
 
 /* start of entry individual view style*/
 #entryEdit{
-min-height: 100vh;
+  font-family: 'Rubik';
+  min-height: 100vh;
  overflow: hidden;
  display: block;
  position: relative;
- padding-bottom: 100px; 
+ padding-bottom: 100px;
+ display:flex;
+ flex-direction: column;
+ align-content:center;
+ gap: 20px;
+ margin-top:20px;
+}
+
+.textArea{
+background-color: #f8f2f8ee;
+text-align: center;
+border: 1px solid ;
+border-radius:12px;
+font-size:16px;
+padding:15px;
+margin:5px;
+}
+
+#entryTitle{
+  text-align: center;
+  margin:0 auto;
+  width:300px;
+}
+
+#entryMood{
+  display:flex;
+  margin:0 auto;
+  text-align: center;
+  max-width: 400px;
+}
+
+#entryContent{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:20px;
+  /* justify-content: space-evenly; */
+  margin-top:20px;
+  height: 350px
+}
+
+#entryImg{
+  border-radius: 12px;
+  height: 100%;
+}
+
+#entryContentTitle{
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#entryBubble{
+  width: 355px;
 }
 /* start of entry individual view style*/
 
@@ -239,8 +294,6 @@ min-height: 100vh;
 }
 
 /* end of entry display style*/
-
-
 
 
 /* start of login style */
@@ -284,3 +337,6 @@ min-height: 100vh;
   align-content:space-around;
 }
 /* end of login style */
+
+/* start of entry style */
+/* start of entry style */
