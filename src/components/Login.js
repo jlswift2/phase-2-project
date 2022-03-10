@@ -27,11 +27,6 @@ function Login({ handleSetUser, signUp }) {
   }
   const handleSubmit = event => {
     event.preventDefault();
-    localStorage.setItem("journalUser", JSON.stringify(userData));
-    handleSetUser(userData);
-    history.push("/");
-    console.log("login");
-
 
     //if they're signing up for an account
     if (signUp){

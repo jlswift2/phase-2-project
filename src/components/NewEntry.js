@@ -96,13 +96,13 @@ function NewEntry({ user, handleSetUser }) {
                     onChange={handleChange}
                 />
 
-//                 <input
+{/*                  <input
 //                     type="text"
 //                     name="author"
 //                     placeholder="Enter your name..."
 //                     value={formData.author}
 //                     onChange={handleChange}
-//                 />
+//                 /> */}
 
                 <label>
                     <select onChange={handleChange} name="mood" placeholder="How Am I Feeling?" value={formData.mood}>
