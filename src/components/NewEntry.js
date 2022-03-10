@@ -7,7 +7,8 @@ function NewEntry({ user, handleSetUser }) {
         text_body: "",
         author: "",
         mood: "",
-        date: {}
+        date: {},
+        img: ""
     });
     
     const history =useHistory()
@@ -84,6 +85,14 @@ function NewEntry({ user, handleSetUser }) {
                     name="title"
                     placeholder="Enter Title For Entry..."
                     value={formData.title}
+                    onChange={handleChange}
+                />
+
+                <input
+                    type="text" 
+                    name="img"
+                    placeholder="Enter Image URL For Entry"
+                    value={formData.img}
                     onChange={handleChange}
                 />
 

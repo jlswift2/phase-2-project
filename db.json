@@ -47,6 +47,15 @@
       "mood": "Happy",
       "date": "2022-03-09T15:18:04.512Z",
       "id": 8
+    },
+    {
+      "title": "asdfgsdfg",
+      "text_body": "hahaha",
+      "author": "jswift",
+      "mood": "Tired",
+      "date": "2022-03-10T03:23:32.219Z",
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "id": 9
     }
   ],
   "users": [
