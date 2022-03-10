@@ -44,15 +44,15 @@ function EntryDisplay({ user, handleSetUser }) {
   }
 
   const renderFilteredEntries = filter => {
-    if (filter === "All") return entries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    if (filter === "All") return entries.map(entry => <EntryCard key={entry.id} entry={entry} user={user}></EntryCard>);
 
     else if (filter === "Your Entries") {
       const filteredEntries = entries.filter(entry => entry.author === user.username);
-      return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+      return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry} user={user}></EntryCard>);
     }
 
     const filteredEntries = entries.filter(entry => entry.mood === filter);
-    return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry}></EntryCard>);
+    return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry} user={user}></EntryCard>);
   }
 
   const moodList = moodArray.map(mood =>
