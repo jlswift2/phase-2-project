@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
-import logo from "../logo/logo2.jpeg";
+import logo from "../logo/logoIcon.png";
+
+
 function Login({ handleSetUser, signUp }) {
   const [userData, setUserData] = useState({
     username: "",
@@ -49,7 +51,7 @@ function Login({ handleSetUser, signUp }) {
       }
       else {
         //tell user their name is already taken
-        setError("Sorry, that username is already taken :(");
+        setError("Sorry, that username is already taken.");
       }
     }
 
@@ -70,13 +72,13 @@ function Login({ handleSetUser, signUp }) {
         }
 
         else {
-          setError("That is not your favorite animal. Did it change since you made an account? :O");
+          setError("That is not your favorite animal.");
         }
       }
 
       //their username wasn't found in our users database
       else{
-        setError("That username is not in our database :(");
+        setError("That username is not in our database.");
       }
     }
   }
@@ -97,7 +99,7 @@ function Login({ handleSetUser, signUp }) {
   return (
     <div id="loginContainer">
       <div id="loginContent">
-        <img id="logo" src={logo} alt="logo"/>
+        <img id="logoLogin" src={logo} alt="logo"/>
         <form onSubmit={handleSubmit}>
           <div id="inputContainer">
             <input className="inputBox" type="text" name="username" value={userData.username} onChange={handleChange} placeholder="Enter Username..."></input>

@@ -46,8 +46,8 @@ function Entry({ user, handleSetUser }) {
       </div>
       <h3 style={{ textAlign: "center" }}>My Bubble</h3>
       <div id="entryContent">
-        <img id="entryImg" src="https://i.pinimg.com/736x/1b/ef/b5/1befb5723f54627768e1d77642ca4d45.jpg" alt="CATTTTTTT" />
-        <p className="textArea" id="entryBubble" >{entry.text_body}</p>
+        <img id="entryImg" src={entry.img} alt={entry.title} />
+        <p id="entryBubble" >{entry.text_body}</p>
       </div>
 
 

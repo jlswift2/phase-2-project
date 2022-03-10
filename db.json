@@ -77,6 +77,41 @@
       "username": "jswift",
       "favAnimal": "dog",
       "id": 2
+    },
+    {
+      "username": "v12v0",
+      "favAnimal": "cat",
+      "id": 3
+    },
+    {
+      "username": "",
+      "favAnimal": "",
+      "id": 4
+    },
+    {
+      "username": "justin",
+      "favAnimal": "fish",
+      "id": 5
+    },
+    {
+      "username": "beans",
+      "favAnimal": "cat",
+      "id": 6
+    },
+    {
+      "username": "test",
+      "favAnimal": "test",
+      "id": 7
+    },
+    {
+      "username": "rfe",
+      "favAnimal": "efef",
+      "id": 8
+    },
+    {
+      "username": "r34r3",
+      "favAnimal": "3r3r",
+      "id": 9
     }
   ]
 }
