@@ -2,12 +2,15 @@ import React from "react";
 import EntryDisplay from "./EntryDisplay";
 
 function Home({ user, handleSetUser }) {
+
+
+  console.log(user);
   return (
     <>
       <section>
         <div id="titleContainer">
           <div id="titleBox">
-            <div id="title">Hello! (user's name).</div>
+            <div id="title" user={user}>Hello,</div>
             <div id="titleDescription">How are you? 😊</div>
           </div>
           <div id="midArrow">
