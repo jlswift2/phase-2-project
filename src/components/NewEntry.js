@@ -86,6 +86,15 @@ function NewEntry({ user, handleSetUser }) {
                     value={formData.title}
                     onChange={handleChange}
                 />
+
+//                 <input
+//                     type="text"
+//                     name="author"
+//                     placeholder="Enter your name..."
+//                     value={formData.author}
+//                     onChange={handleChange}
+//                 />
+
                 <label>
                     <select onChange={handleChange} name="mood" placeholder="How Am I Feeling?" value={formData.mood}>
                         <option value="" disabled selected hiddens>How Am I Feeling?</option>
@@ -93,7 +102,7 @@ function NewEntry({ user, handleSetUser }) {
                         <option value="Tired">Tired</option>
                         <option value="Sad">Sad</option>
                         <option value="Excitement">Excitement</option>
-                        <option value="Contempt">Contempt</option>
+                        <option value="Loved">Loved</option>
                         <option value="Stressed">Stressed</option>
                     </select>
                 </label>
