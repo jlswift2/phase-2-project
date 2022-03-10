@@ -60,14 +60,9 @@
   ],
   "users": [
     {
-      "username": "qwe",
-      "favAnimal": "qweqwe",
+      "username": "brian vu",
+      "favAnimal": "kangaroo",
       "id": 1
-    },
-    {
-      "username": "sc",
-      "favAnimal": "wqqqqqq",
-      "id": 2
     }
   ]
 }
