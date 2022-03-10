@@ -226,7 +226,7 @@ min-height: 100vh;
 /* start of entry individual view style*/
 
 /* start of entry display style*/
-#moodContainer{
+#filterContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -270,10 +270,7 @@ min-height: 100vh;
   flex-direction:column;
   gap:15px;
 }
-/* .btn2{
-  border-top: 1px solid ;
-  padding-top:15px;
-} */
+
 #logo{
   width: 100%;
   height: 214px;
