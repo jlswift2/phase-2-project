@@ -111,11 +111,6 @@ function NewEntry({ user, handleSetUser }) {
         <option value={mood} >
             {mood}
         </option>);
-    const moodList2 = moodArray.map(mood =>
-        <button onClick={(e) => console.log(e.target.value)} name="mood" value={mood}>
-            {mood}
-        </button>);
-
 
     return (
         <div id="new-entry-form" onSubmit={handleSubmit}>

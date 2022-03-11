@@ -70,7 +70,7 @@ function EntryDisplay({ user, handleSetUser }) {
     <div id="entryContainer">
       <h1 id="homePage">Thought Bubbles</h1>
       <div id="filterContainer">
-        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange}> ✏️ Your Entries</button> : null}
+        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange} key="1"> ✏️ Your Entries</button> : null}
         {moodList}
         <button  onClick={handleNewest} value="descending">⏳ Newest Bubbles</button>
         <button onClick={handleOldest} value="ascending"> ⌛️ Oldest Bubbles</button>
