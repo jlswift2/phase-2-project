@@ -71,7 +71,10 @@ function NewEntry({ user, handleSetUser }) {
                         fetch("http://localhost:8002/journals", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(newEntry)
+                            body: JSON.stringify({
+                                ...newEntry,
+                                mood: newEntry.mood.substring(2, newEntry.mood.length)
+                            })
                         })
                             .then(response => response.json())
                             .then(data => history.push("/"));
@@ -80,7 +83,10 @@ function NewEntry({ user, handleSetUser }) {
                 fetch("http://localhost:8002/journals", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(newEntry)
+                    body: JSON.stringify({
+                        ...newEntry,
+                        mood: newEntry.mood.substring(2, newEntry.mood.length)
+                    })
                 })
                     .then(response => response.json())
                     .then(data => history.push("/"));
@@ -92,7 +98,10 @@ function NewEntry({ user, handleSetUser }) {
             fetch(`http://localhost:8002/journals/${id}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({
+                    ...formData,
+                    mood: formData.mood.substring(2, formData.mood.length)
+                })
             })
                 .then(response => response.json())
                 .then(data => history.push("/"));
