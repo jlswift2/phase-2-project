@@ -203,7 +203,7 @@ position: relative;
 .card {
   padding:100px;
   width:250px;
-  height:400px;
+  height:450px;
   background-color: white;
   border: 1px solid #bacdd8;
   padding: 8px;
@@ -251,9 +251,23 @@ button {
 .card-heart {
   text-align: center;
   font-size: medium;
+  margin-top: 10px;
 }
 .card-heart:hover{
   cursor: pointer;
+}
+
+.card-author {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.date {
+  margin-top: 5px;
+}
+
+.more-button {
+  margin-top: 5px;
 }
 /* end of entry card style*/
 

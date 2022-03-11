@@ -95,12 +95,21 @@ function NewEntry({ user, handleSetUser }) {
 
         //making a post edit 
         if (match.path === "/Entry/:id/Edit") {
+            const moodFind = moodArray.findIndex(mood => mood === formData.mood);
+            let realMood;
+            
+            if(moodFind !== -1){
+                realMood = formData.mood.substring(2, formData.mood.length);
+            }
+            else{
+                realMood = formData.mood;
+            }
             fetch(`http://localhost:8002/journals/${id}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     ...formData,
-                    mood: formData.mood.substring(2, formData.mood.length)
+                    mood: realMood
                 })
             })
                 .then(response => response.json())

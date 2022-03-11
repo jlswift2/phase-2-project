@@ -31,13 +31,17 @@ function EntryCard({ entry, user }) {
         <div className="card_details">
           <span class="tag">{entry.mood}</span>
 
-          <div class="name" style={{textAlign: "center"}}>{entry.title}
-          <br/>
-          by {entry.author}</div>
-          <div class="date" style={{textAlign: "center"}}>{new Date(entry.date).toLocaleString()}</div>
+          <div class="name" style={{textAlign: "center"}}>
+            {entry.title}
+            <div className='card-author'>
+              by {entry.author}
+            </div>
+          </div>
+
+          <div className="date" style={{textAlign: "center"}}>{new Date(entry.date).toLocaleString()}</div>
 
           <Link to={`/Entry/${entry.id}`} style={{ textDecoration: 'none' }}>
-            <button>Read more</button>
+            <button className="more-button">Read more</button>
           </Link>
          <p className="card-heart" onClick={() => handleLikesClick()}>❤️ {likes}</p>
         </div>
