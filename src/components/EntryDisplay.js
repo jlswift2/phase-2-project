@@ -59,7 +59,7 @@ function EntryDisplay({ user, handleSetUser }) {
   }
 
   const moodList = moodArray.map(mood =>
-    <button id="moodFilter" value={mood} onClick={handleFilterChange} >
+    <button id="moodFilter" value={mood} onClick={handleFilterChange} key={mood}>
       {mood}
     </button>);
 
@@ -69,7 +69,7 @@ function EntryDisplay({ user, handleSetUser }) {
     <div id="entryContainer">
       <h1 id="homePage">Thought Bubbles</h1>
       <div id="filterContainer">
-        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange}> ✏️ Your Entries</button> : null}
+        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange} key="1"> ✏️ Your Entries</button> : null}
         {moodList}
         <button  onClick={handleOrderChange} value="descending">⏳ Newest Bubbles</button>
         <button onClick={handleOrderChange} value="ascending"> ⌛️ Oldest Bubbles</button>
