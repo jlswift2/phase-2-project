@@ -67,7 +67,7 @@ function Entry({ user, handleSetUser }) {
       </div>
       <h3 style={{ textAlign: "center" }}>
         My Bubble:
-        <IoMdHeart id="heart" onClick={() => handleLikesClick()}></IoMdHeart>
+        <IoMdHeart className="heart" onClick={() => handleLikesClick()}></IoMdHeart>
         {entry.likes}
       </h3>
       <div id="entryContent">

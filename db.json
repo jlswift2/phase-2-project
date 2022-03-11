@@ -60,7 +60,7 @@
       "author": "jswift",
       "mood": "Tired",
       "date": "2022-03-10T03:23:32.219Z",
-      "likes": 8,
+      "likes": 10,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 9
     },
@@ -70,7 +70,7 @@
       "author": "jswift",
       "mood": "Loved",
       "date": "2022-03-10T15:24:29.314Z",
-      "likes": 3,
+      "likes": 7,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 10
     },
@@ -80,7 +80,7 @@
       "author": "brian vu",
       "mood": "Tired",
       "date": "2022-03-10T15:55:20.517Z",
-      "likes": 17,
+      "likes": 21,
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
     },
@@ -91,8 +91,28 @@
       "mood": "Tired",
       "date": "2022-03-11T01:36:40.747Z",
       "img": "https://media4.giphy.com/media/6UTaH0SqdKRtufbe6v/giphy.gif?cid=bae1c64163504ed69e74ff2ef0ec983b883d47700d53f733&rid=giphy.gif&ct=g",
-      "likes": 3,
+      "likes": 7,
       "id": 12
+    },
+    {
+      "title": "sleepy",
+      "text_body": "good night",
+      "author": "brian vu",
+      "mood": "Tired",
+      "date": "2022-03-11T05:32:59.615Z",
+      "img": "https://media0.giphy.com/media/LmgFqlSj5uZ1PCUaFR/giphy.gif?cid=bae1c64165bcf3f4dc2cf4ed1364d120108a153860af7566&rid=giphy.gif&ct=g",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "title": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+      "text_body": "q",
+      "author": "brian vu",
+      "mood": "Stressed",
+      "date": "2022-03-11T15:48:24.772Z",
+      "img": "https://media2.giphy.com/media/4HrvfHcHC8cmB4w6c9/giphy.gif?cid=bae1c64193b22b86db7addb1bfc72a853f4b4d2c6ef8c16a&rid=giphy.gif&ct=g",
+      "likes": 0,
+      "id": 14
     }
   ],
   "users": [

@@ -248,8 +248,14 @@ button {
   cursor: pointer;
 }
 
-.card__details {
-  padding: 16px 8px 8px 8px;
+.card-heart {
+  text-align: center;
+}
+.card-heart-size{
+  font-size: large;
+}
+.card-heart:hover{
+  cursor: pointer;
 }
 /* end of entry card style*/
 
@@ -322,10 +328,6 @@ margin:5px;
   border-radius: 12px;
   height:100%;
   width: 400px;
-}
-
-#heart{
-  
 }
 /* start of entry individual view style*/
 

@@ -125,7 +125,7 @@ function NewEntry({ user, handleSetUser }) {
                     name="title"
                     placeholder="Enter Title..."
                     value={formData.title}
-                    maxlength="30"
+                    maxLength="30"
                     onChange={handleChange}
                 />
                 <h3 style={{ textAlign: "center" }}>Image</h3>
