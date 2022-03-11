@@ -50,7 +50,6 @@ function NewEntry({ user, handleSetUser }) {
             ...formData,
             [e.target.name]: e.target.value
         })
-        console.log(formData.mood)
     }
 
     function handleSubmit(e) {
@@ -117,7 +116,7 @@ function NewEntry({ user, handleSetUser }) {
         }
     }
     const moodList = moodArray.map(mood =>
-        <option value={mood} >
+        <option key={mood} value={mood} >
             {mood}
         </option>);
 
@@ -149,7 +148,7 @@ function NewEntry({ user, handleSetUser }) {
                 <h3 style={{ textAlign: "center" }}>Today I'm Feeling</h3>
                 <label>
                     <select id="dropdown" onChange={handleChange} name="mood" placeholder="How Am I Feeling?" value={formData.mood}>
-                    <option value="" disabled selected hiddens>Select Your Mood</option>
+                    <option value="" disabled>Select Your Mood</option>
                         {moodList}
                     </select>
                 </label>

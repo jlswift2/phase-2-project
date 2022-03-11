@@ -1,63 +1,49 @@
 {
   "journals": [
     {
-      "id": 1,
-      "title": "Help me",
-      "text_body": "I am trapped in the database and cannot get out!",
-      "author": "json",
-      "mood": "Sad",
-      "date": "2022-03-01T02:17:08.027Z",
-      "likes": 0
-    },
-    {
       "id": 2,
-      "title": "Blog Post",
-      "text_body": "I really need to do it. For real. I have not even thought about it yet.",
-      "author": "Justin",
-      "mood": "Tired",
+      "title": "Hi! Welcome to Chilli's",
+      "text_body": "I am Groot ",
+      "author": "kenny",
+      "mood": "Stressed",
       "date": "2022-03-02T02:17:06.027Z",
+      "img": "https://i.pinimg.com/236x/fc/b1/e1/fcb1e1a9b5c3c64f9ecd7f2ef3ed5343.jpg",
       "likes": 7
     },
     {
       "id": 3,
-      "title": "A haiku",
-      "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
-      "author": "unknown",
-      "mood": "Happy",
+      "title": "Are raccoons the perfect pets?",
+      "text_body": "Feeling like a bit of a chaos garbage person this week and trying to remember that I did excellent on an exam, worked out, cooked, completed a react project with advanced deliverables, ran errands, and introduced a dude to my family... so yeah maybe remembering what I did get done this week cheered me up.",
+      "author": "molly",
+      "mood": "Tired",
       "date": "2022-03-02T02:17:08.027Z",
+      "img": "https://cdn2.lamag.com/wp-content/uploads/sites/6/2020/12/dumpster-100soft-mccarty-closeup1-1068x712.jpg",
       "likes": 8
     },
     {
-      "title": "my cat",
-      "text_body": "i love my cats",
-      "author": "Vi",
+      "title": "My Life as a Slo-Mo-Sapien",
+      "text_body": "Like Sleeping Beauty-- without the sleep... or the beauty...",
+      "author": "becca",
       "mood": "Tired",
-      "date": "2022-03-03T02:17:08.027Z",
-      "likes": 1,
-      "id": 4
-    },
-    {
-      "title": "sdfgsdfg",
-      "text_body": "dfsbbbsere",
-      "author": "Justin",
-      "mood": "Sad",
       "date": "2022-03-09T02:17:08.027Z",
+      "img": "https://i.pinimg.com/736x/0b/79/56/0b795634c9c6b80bdaac2eadaf5085e8--funny-sloth-memes-humor-memes.jpg",
       "likes": 3,
       "id": 7
     },
     {
-      "title": "boop",
-      "text_body": "gjhghjkghjg",
-      "author": "Justin",
-      "mood": "Happy",
+      "title": "The best dev to ever live",
+      "text_body": "Today I am feeling so amazing. My boys are so lovely. I am also pretty stressed because I really need some childcare as soon as possible. My students are people i truly look forward seeing each day and they are such a source of inspiration. ",
+      "author": "antonio",
+      "mood": "Loved",
       "date": "2022-03-09T15:18:04.512Z",
+      "img": "https://qph.fs.quoracdn.net/main-qimg-b5bc646078f3ffcdfb2f2e59fee85560",
       "likes": 8,
       "id": 8
     },
     {
-      "title": "asdfgsdfg",
-      "text_body": "hahaha",
-      "author": "jswift",
+      "title": "The Encyclopedia of Evan",
+      "text_body": "Tired but also ready to get plastered this weekend.",
+      "author": "evan",
       "mood": "Tired",
       "date": "2022-03-10T03:23:32.219Z",
       "likes": 10,
@@ -65,10 +51,10 @@
       "id": 9
     },
     {
-      "title": "blorp",
-      "text_body": "hfjgjhgfjhgfrytfdbdfb",
-      "author": "jswift",
-      "mood": "Loved",
+      "title": "Lyssie Wri(ght)es",
+      "text_body": "Feelin pretty 100 rn, thank you!",
+      "author": "lyssie",
+      "mood": "Happy",
       "date": "2022-03-10T15:24:29.314Z",
       "likes": 7,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
@@ -85,34 +71,64 @@
       "id": 11
     },
     {
-      "title": "1",
-      "text_body": "3",
-      "author": "brian vu",
-      "mood": "Tired",
+      "title": "The Code Hard Truth",
+      "text_body": "Fan-damn-tastic",
+      "author": "stephen",
+      "mood": "Excited",
       "date": "2022-03-11T01:36:40.747Z",
-      "img": "https://media4.giphy.com/media/6UTaH0SqdKRtufbe6v/giphy.gif?cid=bae1c64163504ed69e74ff2ef0ec983b883d47700d53f733&rid=giphy.gif&ct=g",
-      "likes": 7,
+      "img": "https://cdn.shopify.com/s/files/1/0306/6419/6141/articles/coding_languages_1000x.png?v=1619126283",
+      "likes": 3,
       "id": 12
     },
     {
-      "title": "sleepy",
-      "text_body": "good night",
-      "author": "brian vu",
-      "mood": "Tired",
-      "date": "2022-03-11T05:32:59.615Z",
-      "img": "https://media0.giphy.com/media/LmgFqlSj5uZ1PCUaFR/giphy.gif?cid=bae1c64165bcf3f4dc2cf4ed1364d120108a153860af7566&rid=giphy.gif&ct=g",
-      "likes": 0,
+      "title": "My journey",
+      "text_body": "I'm grateful for the people in my life that love me",
+      "author": "elizabeth",
+      "mood": "Loved",
+      "date": "2022-03-07T15:50:20.517Z",
+      "likes": 17,
+      "img": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=pexels-pixabay-326055.jpg&fm=jpg",
       "id": 13
     },
     {
-      "title": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
-      "text_body": "q",
-      "author": "brian vu",
-      "mood": "Stressed",
-      "date": "2022-03-11T15:48:24.772Z",
-      "img": "https://media2.giphy.com/media/4HrvfHcHC8cmB4w6c9/giphy.gif?cid=bae1c64193b22b86db7addb1bfc72a853f4b4d2c6ef8c16a&rid=giphy.gif&ct=g",
+      "title": "Tired but Happy ",
+      "text_body": "Feeling excited about finishing our project and styling it. ",
+      "author": "jane",
+      "mood": "Happy",
+      "date": "2022-03-11T15:25:09.260Z",
+      "img": "https://media0.giphy.com/media/jxxOp3TKmQIlfecy3y/giphy.gif?cid=bae1c641d0cec4754302acd68a3cc54fbff3ba6a01231bf9&rid=giphy.gif&ct=g",
       "likes": 0,
       "id": 14
+    },
+    {
+      "title": "Cats Rule!  Dogs Drool!",
+      "text_body": "Feeling all the emotions ",
+      "author": "tyler",
+      "mood": "Stressed",
+      "date": "2022-03-11T15:26:02.607Z",
+      "img": "https://media4.giphy.com/media/ggRRIj9c9AIfReSkyz/giphy.gif?cid=bae1c641bf0e698e8033f0b7772686537cd9ef1a16eba8e1&rid=giphy.gif&ct=g",
+      "likes": 0,
+      "id": 15
+    },
+    {
+      "title": "Drews Detailed Deeds",
+      "text_body": "I am doing alright",
+      "author": "drew",
+      "mood": "Tired",
+      "date": "2022-03-11T15:26:50.776Z",
+      "img": "https://media3.giphy.com/media/NETaqx0Z1n6vK/giphy.gif?cid=bae1c641649c153ff76e8ded0a6689ef464ffb2e3a32475c&rid=giphy.gif&ct=g",
+      "likes": 0,
+      "id": 16
+    },
+    {
+      "title": "My Diary (nobody look)",
+      "text_body": "swell! thanks for asking!",
+      "author": "alexander",
+      "mood": "Happy",
+      "date": "2022-03-11T15:30:31.698Z",
+      "img": "https://media3.giphy.com/media/FVuJV0D4CAahW/giphy.gif?cid=bae1c6414f35225797a2b6ccb81be23cf17527efffec76f2&rid=giphy.gif&ct=g",
+      "likes": 0,
+      "id": 17
     }
   ],
   "users": [
@@ -132,39 +148,64 @@
       "id": 3
     },
     {
-      "username": "",
-      "favAnimal": "",
+      "username": "alexander",
+      "favAnimal": "tiger",
       "id": 4
     },
     {
-      "username": "justin",
-      "favAnimal": "fish",
+      "username": "kenny",
+      "favAnimal": "ocelot",
       "id": 5
     },
     {
-      "username": "beans",
+      "username": "molly",
       "favAnimal": "cat",
       "id": 6
     },
     {
-      "username": "test",
-      "favAnimal": "test",
+      "username": "becca",
+      "favAnimal": "sloth",
       "id": 7
     },
     {
-      "username": "rfe",
-      "favAnimal": "efef",
+      "username": "antonio",
+      "favAnimal": "octopus",
       "id": 8
     },
     {
-      "username": "r34r3",
-      "favAnimal": "3r3r",
+      "username": "lyssie",
+      "favAnimal": "giraffe",
       "id": 9
     },
     {
-      "username": "suppppperduppperlong",
-      "favAnimal": "cat",
+      "username": "jane",
+      "favAnimal": "dog",
       "id": 10
+    },
+    {
+      "username": "evan",
+      "favAnimal": "sloth",
+      "id": 11
+    },
+    {
+      "username": "stephen",
+      "favAnimal": "bat",
+      "id": 12
+    },
+    {
+      "username": "elizabeth",
+      "favAnimal": "butterfly",
+      "id": 13
+    },
+    {
+      "username": "tyler",
+      "favAnimal": "cat",
+      "id": 14
+    },
+    {
+      "username": "drew",
+      "favAnimal": "wolf",
+      "id": 15
     }
   ]
 }
