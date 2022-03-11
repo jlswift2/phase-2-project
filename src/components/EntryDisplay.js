@@ -54,16 +54,16 @@ function EntryDisplay({ user, handleSetUser }) {
       return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry} user={user}></EntryCard>);
     }
 
-    const filteredEntries = entries.filter(entry => entry.mood === filter);
+    const filteredEntries = entries.filter(entry => {
+      return entry.mood === filter
+    });
     return filteredEntries.map(entry => <EntryCard key={entry.id} entry={entry} user={user}></EntryCard>);
   }
 
   const moodList = moodArray.map(mood =>
-    <button id="moodFilter" value={mood} onClick={handleFilterChange} >
+    <button id="moodFilter" value={mood.substring(3, mood.length)} onClick={handleFilterChange} >
       {mood}
     </button>);
-
-
 
   return (
     <div id="entryContainer">
