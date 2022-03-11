@@ -23,21 +23,22 @@ function EntryDisplay({ user, handleSetUser }) {
   }, []);
 
   useEffect(() => {
-    handleOrderChange(entries);
+    handleNewest(entries);
   }, [entries])
 
   //Date Order Functions
-  const handleOrderChange = (e, array = entries) => {
-    if (isDescending === false) {
-      array.sort(function (a, b) {
+  const handleNewest = (e, array = entries) => {
+    setIsDescending(!isDescending)  
+    array.sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
       })
-    } else {
-      array.sort(function (a, b) {
-        return new Date(a.date) - new Date(b.date);
-      })
     }
-    setIsDescending(!isDescending)
+
+  const handleOldest = (e, array = entries) => {
+    setIsDescending(!isDescending)  
+    array.sort(function (a, b) {
+      return new Date(a.date) - new Date(b.date);
+    }) 
   }
 
 
@@ -71,8 +72,8 @@ function EntryDisplay({ user, handleSetUser }) {
       <div id="filterContainer">
         {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange}> ✏️ Your Entries</button> : null}
         {moodList}
-        <button  onClick={handleOrderChange} value="descending">⏳ Newest Bubbles</button>
-        <button onClick={handleOrderChange} value="ascending"> ⌛️ Oldest Bubbles</button>
+        <button  onClick={handleNewest} value="descending">⏳ Newest Bubbles</button>
+        <button onClick={handleOldest} value="ascending"> ⌛️ Oldest Bubbles</button>
       </div>
 
       <FadeInUp>
