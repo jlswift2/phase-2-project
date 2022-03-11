@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, Link } from "react-router-dom";
-import logo from "../logo/logo2.jpeg";
+import logo from "../logo/logoIcon.png";
+
+
 function Login({ handleSetUser, signUp }) {
   const [userData, setUserData] = useState({
     username: "",
@@ -49,7 +51,7 @@ function Login({ handleSetUser, signUp }) {
       }
       else {
         //tell user their name is already taken
-        setError("Sorry, that username is already taken :(");
+        setError("Sorry, that username is already taken.");
       }
     }
 
@@ -70,13 +72,13 @@ function Login({ handleSetUser, signUp }) {
         }
 
         else {
-          setError("That is not your favorite animal. Did it change since you made an account? :O");
+          setError("Password is not in database");
         }
       }
 
       //their username wasn't found in our users database
       else{
-        setError("That username is not in our database :(");
+        setError("Username is not in database.");
       }
     }
   }
@@ -84,11 +86,13 @@ function Login({ handleSetUser, signUp }) {
   const handleSignUp = signUp => {
     if (signUp) return (
       <>
+      <br/>
         Already have an account? <button> <Link to="/Login" style={{ textDecoration: 'none', color: "inherit" }}>Log In</Link> </button>
       </>
     );
     else return (
       <>
+       <br/>
         Don't have an account yet?  <button> <Link to="/SignUp" style={{ textDecoration: 'none', color: "inherit"}}>Sign Up</Link> </button>
       </>
     );
@@ -97,11 +101,11 @@ function Login({ handleSetUser, signUp }) {
   return (
     <div id="loginContainer">
       <div id="loginContent">
-        <img id="logo" src={logo} alt="logo"/>
+        <img id="logoLogin" src={logo} alt="logo"/>
         <form onSubmit={handleSubmit}>
           <div id="inputContainer">
             <input className="inputBox" type="text" name="username" value={userData.username} onChange={handleChange} placeholder="Enter Username..."></input>
-            <input className="inputBox" type="text" name="favAnimal" value={userData.favAnimal} onChange={handleChange} placeholder="Enter Favorite Animal..."></input>
+            <input className="inputBox" type="text" name="favAnimal" value={userData.favAnimal} onChange={handleChange} placeholder="Enter Password..."></input>
           </div>
           <br/>
           <br/>

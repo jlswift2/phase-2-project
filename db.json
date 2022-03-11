@@ -51,7 +51,7 @@
       "author": "Justin",
       "mood": "Happy",
       "date": "2022-03-09T15:18:04.512Z",
-      "likes": 7,
+      "likes": 8,
       "id": 8
     },
     {
@@ -60,7 +60,7 @@
       "author": "jswift",
       "mood": "Tired",
       "date": "2022-03-10T03:23:32.219Z",
-      "likes": 11,
+      "likes": 8,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 9
     },
@@ -70,7 +70,7 @@
       "author": "jswift",
       "mood": "Loved",
       "date": "2022-03-10T15:24:29.314Z",
-      "likes": 4,
+      "likes": 3,
       "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 10
     },
@@ -80,29 +80,17 @@
       "author": "brian vu",
       "mood": "Tired",
       "date": "2022-03-10T15:55:20.517Z",
-      "likes": 17,
+      "likes": 16,
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
     },
-    {
-      "title": "work now",
-      "text_body": "wrewer",
-      "author": "brian vu",
-      "mood": "Loved",
-      "date": "2022-03-11T00:36:18.647Z",
-      "img": "https://media2.giphy.com/media/3o6ZsU3d4WZ4wX5oQ0/giphy.gif?cid=bae1c6417998fc1433cfd2afb7f0c1b226e3e6b2ae52c44f&rid=giphy.gif&ct=g",
-      "likes": 23,
+      "title": "test",
+      "text_body": "test",
+      "author": "suppppperduppperlong",
+      "mood": "😥Sad",
+      "date": "2022-03-11T00:39:04.550Z",
+      "img": "https://media0.giphy.com/media/btc15FP05Ysog/giphy.gif?cid=bae1c6416686cf73e5ea8da2a00f5af7cfdc3b8f147d87fc&rid=giphy.gif&ct=g",
       "id": 12
-    },
-    {
-      "title": "yay",
-      "text_body": "qweqwe",
-      "author": "brian vu",
-      "mood": "Happy",
-      "date": "2022-03-11T00:38:20.337Z",
-      "img": "https://media2.giphy.com/media/dAdnXq1A2n8vS/giphy.gif?cid=bae1c64165b1517e9694aaa496fce4034e6b2dd022968aa5&rid=giphy.gif&ct=g",
-      "likes": 10,
-      "id": 13
     }
   ],
   "users": [
@@ -115,6 +103,46 @@
       "username": "jswift",
       "favAnimal": "dog",
       "id": 2
+    },
+    {
+      "username": "v12v0",
+      "favAnimal": "cat",
+      "id": 3
+    },
+    {
+      "username": "",
+      "favAnimal": "",
+      "id": 4
+    },
+    {
+      "username": "justin",
+      "favAnimal": "fish",
+      "id": 5
+    },
+    {
+      "username": "beans",
+      "favAnimal": "cat",
+      "id": 6
+    },
+    {
+      "username": "test",
+      "favAnimal": "test",
+      "id": 7
+    },
+    {
+      "username": "rfe",
+      "favAnimal": "efef",
+      "id": 8
+    },
+    {
+      "username": "r34r3",
+      "favAnimal": "3r3r",
+      "id": 9
+    },
+    {
+      "username": "suppppperduppperlong",
+      "favAnimal": "cat",
+      "id": 10
     }
   ]
 }
