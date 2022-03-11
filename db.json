@@ -5,7 +5,7 @@
       "title": "Help me",
       "text_body": "I am trapped in the database and cannot get out!",
       "author": "json",
-      "mood": "sad",
+      "mood": "Sad",
       "date": "2022-03-01T02:17:08.027Z",
       "likes": 0
     },
@@ -14,7 +14,7 @@
       "title": "Blog Post",
       "text_body": "I really need to do it. For real. I have not even thought about it yet.",
       "author": "Justin",
-      "mood": "tired",
+      "mood": "Tired",
       "date": "2022-03-02T02:17:06.027Z",
       "likes": 7
     },
@@ -23,9 +23,9 @@
       "title": "A haiku",
       "text_body": "I'd go to yoga, but they don't serve donuts there. Namaste right here.",
       "author": "unknown",
-      "mood": "happy",
+      "mood": "Happy",
       "date": "2022-03-02T02:17:08.027Z",
-      "likes": 13
+      "likes": 8
     },
     {
       "title": "my cat",
@@ -80,9 +80,19 @@
       "author": "brian vu",
       "mood": "Tired",
       "date": "2022-03-10T15:55:20.517Z",
-      "likes": 16,
+      "likes": 17,
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
+    },
+    {
+      "title": "1",
+      "text_body": "3",
+      "author": "brian vu",
+      "mood": "Tired",
+      "date": "2022-03-11T01:36:40.747Z",
+      "img": "https://media4.giphy.com/media/6UTaH0SqdKRtufbe6v/giphy.gif?cid=bae1c64163504ed69e74ff2ef0ec983b883d47700d53f733&rid=giphy.gif&ct=g",
+      "likes": 3,
+      "id": 12
     }
   ],
   "users": [
