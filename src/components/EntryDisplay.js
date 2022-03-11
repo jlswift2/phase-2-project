@@ -62,7 +62,7 @@ function EntryDisplay({ user, handleSetUser }) {
   }
 
   const moodList = moodArray.map(mood =>
-    <button id="moodFilter" value={mood.substring(3, mood.length)} onClick={handleFilterChange} >
+    <button key={mood} id="moodFilter" value={mood.substring(3, mood.length)} onClick={handleFilterChange} >
       {mood}
     </button>);
 
