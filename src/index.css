@@ -114,28 +114,67 @@ position: relative;
 }
 /* end of footer card styles */
 
-/* start of entry form style*/
-.new-entry-form {
-  text-align: center;
-}
-
-#entry {
-  height: 100px;
-}
+/* start of new bubble  form style*/
 #new-entry-form{
+  font-family: 'Rubik';
   min-height: 100vh;
   overflow: hidden;
   display: block;
   position: relative;
   padding-bottom: 100px; 
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#f3faff ,#fff8f9 40%,#f3faff );
+}
+#formInfo{
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items:center;
+  width:800px;
+  gap: 20px;
+}
+#entryText {
+  height: 350px;
+  width:500px;
+  font-family: 'Rubik';
 }
 
-/* end of entry form style*/
+.inputArea{
+  font-family: 'Rubik';
+  text-align: center;
+  background-image: linear-gradient( rgba(194, 229, 211, .2) 30%, #f3faff);
+  border: none;
+  border-radius:12px;
+  font-size:16px;
+  padding:15px;
+  margin:5px;
+}
+
+#moodButtons{
+  display:flex;
+  flex-direction: row;
+}
+
+#dropdown{
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #ffbdc7;
+  background-image: linear-gradient( rgba(194, 229, 211, .2) 30%, #f3faff);
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* end of new bubble form style*/
 
 /* start of entry card style*/
 #entryContainer{
   font-family: 'Rubik';
-  background-image: linear-gradient(#f7f7f7,#f3faff );
+  background-image: linear-gradient(#f7f7f7,#fff8f9,#f3faff );
   min-height: 100vh;
  overflow: hidden;
  display: block;
@@ -173,7 +212,7 @@ position: relative;
   transition: 0.3s;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
 }
 .tag {
   padding: 4px 8px;
@@ -284,7 +323,13 @@ margin:5px;
   height:100%;
   width: 400px;
 }
+
+#heart{
+  
+}
 /* start of entry individual view style*/
+
+
 
 /* start of entry display style*/
 #filterContainer{
@@ -312,7 +357,7 @@ margin:5px;
   align-items: center;
   position: relative;
   padding-bottom: 100px; 
-  background-image: linear-gradient(#e3f3fa 30%,#f3faff );
+  background-image: linear-gradient(#f3faff,#e3f3fa 30%,#f3faff );
   gap:10px;
 }
 
@@ -352,7 +397,7 @@ margin:5px;
  position: relative;
  padding-bottom: 100px;
  /* background-color:#d8f2fb; */
- background-image: linear-gradient(#d8f2fb 50%,#f3faff );
+ background-image: linear-gradient(#f3faff,#d8f2fb 30%,#f3faff );
  display:flex;
  flex-direction: column;
  /* justify-content: center; */
@@ -360,12 +405,13 @@ margin:5px;
 }
 #logoMission{
   border-radius: 100px;
-  width: 800px;
+  width: 830px;
   height: 500px;
   margin-bottom:40px; 
 }
 
 #missionContent{
   max-width: 800px;
+  margin-top: 45px;
 }
 /* start of mission style */

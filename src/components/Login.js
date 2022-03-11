@@ -72,13 +72,13 @@ function Login({ handleSetUser, signUp }) {
         }
 
         else {
-          setError("That is not your favorite animal.");
+          setError("Password is not in database");
         }
       }
 
       //their username wasn't found in our users database
       else{
-        setError("That username is not in our database.");
+        setError("Username is not in database.");
       }
     }
   }
@@ -86,11 +86,13 @@ function Login({ handleSetUser, signUp }) {
   const handleSignUp = signUp => {
     if (signUp) return (
       <>
+      <br/>
         Already have an account? <button> <Link to="/Login" style={{ textDecoration: 'none', color: "inherit" }}>Log In</Link> </button>
       </>
     );
     else return (
       <>
+       <br/>
         Don't have an account yet?  <button> <Link to="/SignUp" style={{ textDecoration: 'none', color: "inherit"}}>Sign Up</Link> </button>
       </>
     );
@@ -103,7 +105,7 @@ function Login({ handleSetUser, signUp }) {
         <form onSubmit={handleSubmit}>
           <div id="inputContainer">
             <input className="inputBox" type="text" name="username" value={userData.username} onChange={handleChange} placeholder="Enter Username..."></input>
-            <input className="inputBox" type="text" name="favAnimal" value={userData.favAnimal} onChange={handleChange} placeholder="Enter Favorite Animal..."></input>
+            <input className="inputBox" type="text" name="favAnimal" value={userData.favAnimal} onChange={handleChange} placeholder="Enter Password..."></input>
           </div>
           <br/>
           <br/>
