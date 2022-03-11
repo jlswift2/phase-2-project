@@ -46,8 +46,8 @@
       "author": "evan",
       "mood": "Tired",
       "date": "2022-03-10T03:23:32.219Z",
-      "likes": 8,
-      "img": "https://evanchernicky.com/wp-content/uploads/2021/06/evan-logo-transparent.png",
+      "likes": 10,
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 9
     },
     {
@@ -56,8 +56,8 @@
       "author": "lyssie",
       "mood": "Happy",
       "date": "2022-03-10T15:24:29.314Z",
-      "likes": 3,
-      "img": "https://products2.imgix.drizly.com/mi-smirnoff-ice-8a4c463b750c4705.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
+      "likes": 7,
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
       "id": 10
     },
     {
@@ -66,7 +66,7 @@
       "author": "brian vu",
       "mood": "Tired",
       "date": "2022-03-10T15:55:20.517Z",
-      "likes": 17,
+      "likes": 21,
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
     },

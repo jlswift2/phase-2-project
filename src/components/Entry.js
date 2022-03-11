@@ -66,9 +66,10 @@ function Entry({ user, handleSetUser }) {
         <button> {entry.mood} </button>
       </div>
       <h3 style={{ textAlign: "center" }}>
-        My Bubble:
-        <IoMdHeart id="heart" onClick={() => handleLikesClick()}></IoMdHeart>
-        {entry.likes}
+        My Bubble
+        <br/>
+        <br/>
+        <button><p className="card-heart" onClick={() => handleLikesClick()}>❤️ {entry.likes}</p></button>
       </h3>
       <div id="entryContent">
         <img id="entryImg" src={entry.img} alt={entry.title} />
