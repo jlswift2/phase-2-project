@@ -54,12 +54,12 @@ header{
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 800px;
+  height: 850px;
   background-image: linear-gradient(#f3faff,#f6f8f9 );
   text-align: left;
 }
 #titleBox {
-  margin-top: 250px;
+  margin-top: 50px;
   height:200px;
   width: 100%;
   display:flex;

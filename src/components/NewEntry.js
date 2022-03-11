@@ -10,7 +10,8 @@ function NewEntry({ user, handleSetUser }) {
         author: "",
         mood: "",
         date: {},
-        img: ""
+        img: "",
+        likes: 0
     });
 
     const history = useHistory()
@@ -18,6 +19,7 @@ function NewEntry({ user, handleSetUser }) {
     const match = useRouteMatch();
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         handleSetUser(userStatus);
 
         if (match.path === "/Entry/:id/Edit") {
@@ -31,7 +33,8 @@ function NewEntry({ user, handleSetUser }) {
                 author: user ? user.username : "",
                 mood: "",
                 date: {},
-                img: ""
+                img: "",
+                likes: 0
             })
         }
     }, [match.path]);
@@ -118,6 +121,7 @@ function NewEntry({ user, handleSetUser }) {
                     name="title"
                     placeholder="Enter Title..."
                     value={formData.title}
+                    maxlength="30"
                     onChange={handleChange}
                 />
                 <h3 style={{ textAlign: "center" }}>Image</h3>

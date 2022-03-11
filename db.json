@@ -25,7 +25,7 @@
       "author": "unknown",
       "mood": "happy",
       "date": "2022-03-02T02:17:08.027Z",
-      "likes": 8
+      "likes": 13
     },
     {
       "title": "my cat",
@@ -84,7 +84,6 @@
       "img": "https://media0.giphy.com/media/EZICHGrSD5QEFCxMiC/giphy.gif?cid=bae1c641wq711zp54jximzbg81xj15vcj42xdvbkjrzuly1o&rid=giphy.gif&ct=g",
       "id": 11
     },
-    {
       "title": "test",
       "text_body": "test",
       "author": "suppppperduppperlong",
