@@ -6,14 +6,14 @@ function Home({ user, handleSetUser }) {
 
   console.log(user);
   
-  const helloMessage = user ? <div id="title">Hello, {user.username}!</div> : <div id="title">Hello!</div>
-  
+  const greeting = user ? <div id="title">Hello, {user.username}!</div> : <div id="title">Hello!</div>
+
   return (
     <>
       <section>
         <div id="titleContainer">
           <div id="titleBox">
-            {helloMessage}
+            {greeting}
             <div id="titleDescription">How are you? 😊</div>
           </div>
           <div id="midArrow">
