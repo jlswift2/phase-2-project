@@ -10,18 +10,18 @@ function Home({ user, handleSetUser }) {
 
   const bubblesSection = useRef(null);
   useInterSectionObserver(bubblesSection);
+  
+  const userGreeting = user ? <div id="title">Hello, {user.username}!</div> : <div id="title">Hello!</div>
 
   return (
     <>
       <section>
         <div id="titleContainer">
-          <div id="titleBox">
-    
+          <div id="titleBox">    
             <FadeInUp>
-              <div id="title" >Hello! (user's name).</div>
+              {userGreeting}
               <div id="titleDescription">How are you? 😊</div>
             </FadeInUp>
-
           </div>
           <Bounce>
             <div id="midArrow">
