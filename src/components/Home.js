@@ -5,12 +5,15 @@ function Home({ user, handleSetUser }) {
 
 
   console.log(user);
+  
+  const helloMessage = user ? <div id="title">Hello, {user.username}!</div> : <div id="title">Hello!</div>
+  
   return (
     <>
       <section>
         <div id="titleContainer">
           <div id="titleBox">
-            <div id="title" user={user}>Hello,</div>
+            {helloMessage}
             <div id="titleDescription">How are you? 😊</div>
           </div>
           <div id="midArrow">
