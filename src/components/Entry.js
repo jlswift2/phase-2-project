@@ -10,6 +10,7 @@ function Entry({ user, handleSetUser }) {
   const [entry, setEntry] = useState({});
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const userStatus = JSON.parse(localStorage.getItem("journalUser"));
     fetch(`http://localhost:8002/journals/${id}`)
       .then(res => res.json())
