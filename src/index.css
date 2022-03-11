@@ -250,9 +250,7 @@ button {
 
 .card-heart {
   text-align: center;
-}
-.card-heart-size{
-  font-size: large;
+  font-size: medium;
 }
 .card-heart:hover{
   cursor: pointer;
