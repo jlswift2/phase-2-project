@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useParams, useHistory } from "react-router-dom";
 import { IoMdHeart } from "react-icons/io";
 
-const moodArray = ["Happy", "Tired", "Sad", "Excitement", "Loved", "Stressed"]
+const moodArray = ["Happy", "Tired", "Sad", "Excited", "Loved", "Stressed"]
 
 function Entry({ user, handleSetUser }) {
   const { id } = useParams();
@@ -10,6 +10,7 @@ function Entry({ user, handleSetUser }) {
   const [entry, setEntry] = useState({});
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const userStatus = JSON.parse(localStorage.getItem("journalUser"));
     fetch(`http://localhost:8002/journals/${id}`)
       .then(res => res.json())
@@ -33,7 +34,7 @@ function Entry({ user, handleSetUser }) {
     </button>);
 
   const handleLikesClick = () => {
-    if(user){
+    if (user) {
       fetch(`http://localhost:8002/journals/${entry.id}`, {
         method: "PATCH",
         headers: {
@@ -43,11 +44,11 @@ function Entry({ user, handleSetUser }) {
           likes: ++entry.likes
         })
       })
-      .then(res => res.json())
-      .then(data => setEntry(data));
+        .then(res => res.json())
+        .then(data => setEntry(data));
     }
 
-    else{
+    else {
       return null;
     }
   }
@@ -63,14 +64,16 @@ function Entry({ user, handleSetUser }) {
       <h3 style={{ textAlign: "center" }}>Today I was Feeling</h3>
       <div id="entryMood">
         <button> {entry.mood} </button>
-        {/* {moodList} */}
       </div>
-      <h3 style={{ textAlign: "center" }}>My Bubble</h3>
+      <h3 style={{ textAlign: "center" }}>
+        My Bubble:
+        <IoMdHeart id="heart" onClick={() => handleLikesClick()}></IoMdHeart>
+        {entry.likes}
+      </h3>
       <div id="entryContent">
         <img id="entryImg" src={entry.img} alt={entry.title} />
         <p id="entryBubble" >{entry.text_body}</p>
       </div>
-      <IoMdHeart onClick={() => handleLikesClick()}></IoMdHeart> {entry.likes}
 
       {
         user === null || user.username !== entry.author ? null
@@ -80,6 +83,7 @@ function Entry({ user, handleSetUser }) {
             </Link>
             <button onClick={handleDelete}>Delete</button>
           </>
+
       }
 
     </div>

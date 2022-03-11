@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import EntryCard from "./EntryCard";
+import { fadeInUp } from "react-animations"
+import styled, { keyframes } from "styled-components";
 
-
-const moodArray = ["All", "Happy", "Tired", "Sad", "Excitement", "Loved", "Stressed"]
+const moodArray = ["💭 All", "😊 Happy", "😣 Tired", "😥 Sad", "🤩 Excited", "🥰 Loved", "😖 Stressed"]
 
 function EntryDisplay({ user, handleSetUser }) {
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState("All");
-  const [isDescending, setIsDescending] = useState(true)
+  const [isDescending, setIsDescending] = useState(true);
+
+  const FadeInUp = styled.div`animation: 2s ${keyframes`${fadeInUp}`}`;
 
   useEffect(() => {
     const userStatus = JSON.parse(localStorage.getItem("journalUser"));
@@ -66,15 +69,17 @@ function EntryDisplay({ user, handleSetUser }) {
     <div id="entryContainer">
       <h1 id="homePage">Thought Bubbles</h1>
       <div id="filterContainer">
-        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange}>Your Entries</button> : null}
+        {user ? <button id="moodFilter" value="Your Entries" onClick={handleFilterChange}> ✏️ Your Entries</button> : null}
         {moodList}
-        <button  onClick={handleOrderChange} value="descending">Newest Bubbles</button>
-        <button onClick={handleOrderChange} value="ascending">Oldest Bubbles</button>
+        <button  onClick={handleOrderChange} value="descending">⏳ Newest Bubbles</button>
+        <button onClick={handleOrderChange} value="ascending"> ⌛️ Oldest Bubbles</button>
       </div>
 
-      <div id="container">
-        {renderFilteredEntries(filter)}
-      </div>
+      <FadeInUp>
+        <div id="container">
+          {renderFilteredEntries(filter)}
+        </div>
+      </FadeInUp>
     </div>
   )
 }
